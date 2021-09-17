@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
 // import "react-toastify/dist/ReactToastify.css";
 const Home = React.lazy(() => import("./pages/Home"));
+const MainUi = React.lazy(() => import("./pages/MainUi"));
 
 require("dotenv").config();
 
@@ -36,6 +37,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/main" component={MainUi} />
         </Switch>
       </Router>
     </Suspense>
