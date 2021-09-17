@@ -1,0 +1,32 @@
+.aashroy {
+  background-color: #f3ec78;
+  background: linear-gradient(90.87deg, #ff708b 16.28%, #8676ff 94.61%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.mainHeading {
+  text-align: center;
+  color: #505d68;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+.mainHeading p {
+  font-size: 1rem;
+  color: #a1aeb7;
+  font-weight: 400;
+}
+.getStarted {
+  text-align: center;
+  margin-top: 5rem;
+}
+.getStarted .getButton {
+  background: linear-gradient(270deg, #02a4ff 0%, #7d40ff 162.75%);
+  box-shadow: 0px 7px 30px 10px rgba(134, 118, 255, 0.2);
+  border-radius: 3px !important;
+  outline: none !important;
+  border: none !important;
+}
