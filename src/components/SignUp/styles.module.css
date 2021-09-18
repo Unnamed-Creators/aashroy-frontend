@@ -1,0 +1,8 @@
+.getOtp {
+  border: none;
+  outline: none;
+  background-color: rgb(194, 196, 199);
+  width: 120px;
+  height: 30px;
+  margin-top: 1rem;
+}

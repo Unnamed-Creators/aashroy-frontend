@@ -7,10 +7,11 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
-body {
+.lPage {
   background: linear-gradient(-45deg, #eca590, #e77fa7, #78c2dd, #459280);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 8s ease infinite;
+  height: 90vh;
 }
 
 @keyframes gradient {
@@ -30,7 +31,7 @@ body {
   color: #e0d1d1;
   font-size: 2.5rem;
   font-weight: 500;
-  margin-top: 4rem;
+  padding-top: 4rem;
 }
 .mainHeading p {
   font-size: 1rem;
