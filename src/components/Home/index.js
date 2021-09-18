@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./styles.module.css";
+import styles from "./home.module.css";
 import Button from "react-bootstrap/Button";
 const Homec = () => {
   return (
-    <div>
+    <div className={styles.lPage}>
       <div className={styles.mainHeading}>
         Welcome to <span className={styles.aashroy}> AASHROY</span>
         <p>A Helping Hand</p>

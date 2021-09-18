@@ -8,7 +8,12 @@ import styles from "./styles.module.css";
 const Appbar = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="md" bg="light" variant="light">
+      <Navbar
+        collapseOnSelect
+        expand="md"
+        style={{ backgroundColor: "#ebe6e6" }}
+        variant="light"
+      >
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -16,7 +21,7 @@ const Appbar = () => {
               AASHROY
             </Navbar.Brand>
             <Nav className={styles.meAuto}>
-              <Nav.Link href="#home" className={styles.navLink}>
+              <Nav.Link href="/" className={styles.navLink}>
                 Home
               </Nav.Link>
               <Nav.Link href="#features" className={styles.navLink}>
@@ -28,10 +33,10 @@ const Appbar = () => {
               <Nav.Link href="#pricing" className={styles.navLink}>
                 Crime
               </Nav.Link>
-              <Nav.Link href="#pricing" className={styles.navLink}>
+              <Nav.Link href="/ngo" className={styles.navLink}>
                 NGO
               </Nav.Link>
-              <Nav.Link href="#pricing" className={styles.navLink}>
+              <Nav.Link href="/ngo" className={styles.navLink}>
                 Admin
               </Nav.Link>
               <Nav.Link href="#pricing" className={styles.navLink}>
