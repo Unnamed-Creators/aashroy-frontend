@@ -11,6 +11,8 @@ const Homeless = React.lazy(() => import("./pages/homelessList"));
 const DonationAmount = React.lazy(() => import("./pages/Donation"));
 const MainUi = React.lazy(() => import("./pages/MainUi"));
 const LoginUI = React.lazy(() => import("./pages/LoginUI"));
+const JoinAs = React.lazy(() => import("./pages/joinAs"));
+const SignUp = React.lazy(() => import("./pages/SignUp"));
 
 require("dotenv").config();
 
@@ -46,6 +48,8 @@ function App() {
           <Route exact path="/totalDonation" component={DonationAmount} />
           <Route exact path="/main" component={MainUi} />
           <Route exact path="/loginUI" component={LoginUI} />
+          <Route exact path="/joinAs" component={JoinAs} />
+          <Route exact path="/signUp" component={SignUp} />
         </Switch>
       </Router>
     </Suspense>

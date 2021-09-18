@@ -1,0 +1,8 @@
+#partitioned {
+  padding-left: 15px;
+  width: 70px;
+  margin-top: 1rem;
+}
+#partitioned:focus {
+  outline: none;
+}
