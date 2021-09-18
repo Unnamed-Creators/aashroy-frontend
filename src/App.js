@@ -10,6 +10,8 @@ const NGO = React.lazy(() => import("./pages/NGO"));
 const Homeless = React.lazy(() => import("./pages/homelessList"));
 const DonationAmount = React.lazy(() => import("./pages/Donation"));
 const MainUi = React.lazy(() => import("./pages/MainUi"));
+const CrimeReporting = React.lazy(() => import("./pages/CrimeReporting"));
+const CrimeForm = React.lazy(() => import("./pages/CrimeRepoForm"));
 const LoginUI = React.lazy(() => import("./pages/LoginUI"));
 const JoinAs = React.lazy(() => import("./pages/joinAs"));
 const SignUp = React.lazy(() => import("./pages/SignUp"));
@@ -48,6 +50,8 @@ function App() {
           <Route exact path="/homelessList" component={Homeless} />
           <Route exact path="/totalDonation" component={DonationAmount} />
           <Route exact path="/main" component={MainUi} />
+          <Route exact path="/crimereporting" component={CrimeReporting} />
+          <Route exact path="/crimereporting/form" component={CrimeForm} />
           <Route exact path="/loginUI" component={LoginUI} />
           <Route exact path="/joinAs" component={JoinAs} />
           <Route exact path="/signUp" component={SignUp} />

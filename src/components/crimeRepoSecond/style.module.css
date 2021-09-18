@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .outer_container{
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .image{
+      width: 50%;
+  }
+  .image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .button{
+      margin-top: 2rem;
+  }
+  .button button{
+    background-color: #383874;
+    box-shadow: 0 0 3px 1px #383874;
+    padding: 0.8rem 1.4rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .popupContent{
+      height: 200px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .popupContent h3{
+      font-weight: 700;
+      text-align: center;
+      margin-top: 1rem;
+      color: #383874;
+  }
+  .popup_buttons{
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-around;
+  }
+  .popup_buttons button{
+      padding: 0.4rem 0.7rem;
+      border: none;
+      outline: none;
+      color: #fff;
+      background-color: #383874;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 300;
+      cursor: pointer;
+  }
+  .popup_buttons button:nth-child(2){
+      background-color: #FF708B;
+  }
+  @media only screen and (max-width:500px){
+    .image img{
+        width: 72%;
+    }
+  }
