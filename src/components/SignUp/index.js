@@ -5,7 +5,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -17,6 +16,7 @@ import CountrySelector from "../countrySelect";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import OtpInput from "../otpInput";
+import { Link } from "react-router-dom";
 function Copyright(props) {
   return (
     <Typography
@@ -168,17 +168,19 @@ export default function SignUp() {
                 <a href="/">[T&C]</a>
               </Grid>
             </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Sign Up
-            </Button>
+            <Link to="/main">
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+              >
+                Sign Up
+              </Button>
+            </Link>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="/loginUI" variant="body2">
+                <Link to="/loginUI" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>
