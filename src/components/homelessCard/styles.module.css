@@ -1,0 +1,25 @@
+.cardMain {
+  height: 130px;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  display: flex;
+  /* width: 300px; */
+  padding-right: 1rem;
+}
+.details {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.masterCard {
+  width: 330px;
+}
+.preview {
+  font-family: serif;
+  font-weight: lighter;
+}
+.moreDetails {
+  position: relative;
+  margin-top: 5px;
+}

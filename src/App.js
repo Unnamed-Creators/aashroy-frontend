@@ -6,6 +6,9 @@ import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
 // import "react-toastify/dist/ReactToastify.css";
 const Home = React.lazy(() => import("./pages/Home"));
+const NGO = React.lazy(() => import("./pages/NGO"));
+const Homeless = React.lazy(() => import("./pages/homelessList"));
+const DonationAmount = React.lazy(() => import("./pages/Donation"));
 
 require("dotenv").config();
 
@@ -36,6 +39,9 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/ngo" component={NGO} />
+          <Route exact path="/homelessList" component={Homeless} />
+          <Route exact path="/totalDonation" component={DonationAmount} />
         </Switch>
       </Router>
     </Suspense>
