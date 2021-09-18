@@ -1,0 +1,18 @@
+.TopHeading {
+    width: 50rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .TopHeading .link {
+    float: left;
+    cursor: pointer;
+  }
+  .TopHeading .heading {
+    position: relative;
+    text-align: center;
+  }
+  .Subheading{
+    text-align: center;
+    color: #8692A6;
+  }

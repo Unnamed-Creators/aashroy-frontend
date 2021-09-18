@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@300;500;700&display=swap");
+.fullWidth {
+  width: 100%;
+  position: relative;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  color: #383874;
+}
+.formControl {
+  border: 1px solid #383874 !important;
+}
+.textCenterv2 {
+  text-align: center;
+}
+.btn {
+  position: relative;
+  color: #fff;
+  padding: 10px 30px;
+  background: #383874;
+  border: 1px solid #383874;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 2rem 2rem;
+  filter: drop-shadow(4px 6px 30px rgba(134, 118, 255, 0.45));
+}
