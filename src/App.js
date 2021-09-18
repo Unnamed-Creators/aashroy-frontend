@@ -16,6 +16,7 @@ const LoginUI = React.lazy(() => import("./pages/LoginUI"));
 const JoinAs = React.lazy(() => import("./pages/joinAs"));
 const SignUp = React.lazy(() => import("./pages/SignUp"));
 const User = React.lazy(() => import("./pages/userDash"));
+const Admin = React.lazy(() => import("./pages/admin"));
 
 require("dotenv").config();
 
@@ -56,6 +57,7 @@ function App() {
           <Route exact path="/joinAs" component={JoinAs} />
           <Route exact path="/signUp" component={SignUp} />
           <Route exact path="/user" component={User} />
+          <Route exact path="/admin" component={Admin} />
         </Switch>
       </Router>
     </Suspense>
