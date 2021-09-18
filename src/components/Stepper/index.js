@@ -62,7 +62,6 @@ const upload = [
   },
 ];
 
-const Output =[];
 
 const BasicForm = () => {
   const { control } = useFormContext();

@@ -1,0 +1,48 @@
+.listH {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 300px;
+  border: 1px solid #383874;
+  padding: 0.3rem;
+  background-color: #f5f9ff;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+h2 {
+  font-family: serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 3rem !important;
+  /* margin-bottom: 2rem !important; */
+  color: #383874;
+}
+p {
+  text-align: center;
+  font-family: cursive;
+  color: #385e74;
+}
+.image {
+  margin-right: 2rem;
+}
+.text {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  color: black;
+}
+.amount {
+  text-align: center;
+  font-size: 1.2rem;
+}

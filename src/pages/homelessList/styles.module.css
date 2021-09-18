@@ -1,0 +1,26 @@
+.homeless {
+  display: flex;
+}
+.hCard {
+  margin-left: 1rem;
+}
+h2 {
+  text-align: center;
+  color: #383874;
+  font-weight: 400;
+  margin: 2rem 0 2rem 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1030px) {
+  .homeless {
+    flex-direction: column;
+  }
+  .hCard {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}

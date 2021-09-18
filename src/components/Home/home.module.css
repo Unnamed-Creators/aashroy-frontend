@@ -4,24 +4,44 @@
   background-size: 100%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
+.lPage {
+  background: linear-gradient(-45deg, #eca590, #e77fa7, #78c2dd, #459280);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  height: 90vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .mainHeading {
   text-align: center;
-  color: #505d68;
-  font-size: 1.6rem;
+  color: #e0d1d1;
+  font-size: 2.5rem;
   font-weight: 500;
-  margin-top: 4rem;
+  padding-top: 4rem;
 }
 .mainHeading p {
   font-size: 1rem;
-  color: #a1aeb7;
+  color: #1c1f3af1;
   font-weight: 400;
 }
 .getStarted {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
 }
 .getStarted .getButton {
   background: linear-gradient(270deg, #02a4ff 0%, #7d40ff 162.75%);

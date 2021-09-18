@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.outer_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.outer_container .left_section,
+.outer_container .right_section {
+  flex: 1;
+}
+.outer_container .left_section {
+  padding: 2rem 5rem;
+}
+.outer_container .left_section .text {
+}
+.outer_container .left_section .text h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 55px;
+    color: #383874;
+}
+.outer_container .left_section .text p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 25px;
+    color: rgba(56, 56, 116, 0.35);
+}
+.outer_container .left_section .buttons {
+  margin-top: 3rem;
+}
+.outer_container .left_section .buttons button:first-child {
+  background-color: #383874;
+  box-shadow: 0 0 3px 1px #383874;
+  padding: 0.8rem 1.4rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.outer_container .left_section .buttons button:nth-child(2) {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: 2rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #424b5a9f;
+  cursor: pointer;
+}
+.outer_container .right_section img {
+  width: 90%;
+}
+@media only screen and (max-width:500px){
+  .outer_container .left_section {
+    padding:0 1rem;
+  }
+  .outer_container .left_section::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* Specify the background image to be used */
+    background-image: url('./img/crimeLanding.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 80%;
+
+    /* Specify the background image */
+    opacity: 0.2;
+}
+  .outer_container .left_section .text  h1{
+   font-size: 2.2rem;
+    line-height: 35px;
+  }
+  .outer_container .left_section .text p { 
+     font-size: 1rem;
+     color: #000;
+  }
+  .outer_container .right_section{
+    display: none;
+  }
+}

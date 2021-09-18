@@ -8,33 +8,39 @@ import styles from "./styles.module.css";
 const Appbar = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="md" bg="light" variant="light">
+      <Navbar
+        className={styles.resize}
+        collapseOnSelect
+        expand="md"
+        style={{ backgroundColor: "#ebe6e6" }}
+        variant="light"
+      >
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Navbar.Brand href="#home" className={styles.aashroy}>
+            <Navbar.Brand href="/" className={styles.aashroy}>
               AASHROY
             </Navbar.Brand>
             <Nav className={styles.meAuto}>
-              <Nav.Link href="#home" className={styles.navLink}>
+              <Nav.Link href="/" className={styles.navLink}>
                 Home
               </Nav.Link>
-              <Nav.Link href="#features" className={styles.navLink}>
+              <Nav.Link href="/loginUI" className={styles.navLink}>
                 User
               </Nav.Link>
-              <Nav.Link href="#pricing" className={styles.navLink}>
+              <Nav.Link href="/donation" className={styles.navLink}>
                 Donation
               </Nav.Link>
-              <Nav.Link href="#pricing" className={styles.navLink}>
+              <Nav.Link href="/crime" className={styles.navLink}>
                 Crime
               </Nav.Link>
-              <Nav.Link href="#pricing" className={styles.navLink}>
+              <Nav.Link href="/ngo" className={styles.navLink}>
                 NGO
               </Nav.Link>
-              <Nav.Link href="#pricing" className={styles.navLink}>
+              <Nav.Link href="/loginUI" className={styles.navLink}>
                 Admin
               </Nav.Link>
-              <Nav.Link href="#pricing" className={styles.navLink}>
+              <Nav.Link href="/loginUI" className={styles.navLink}>
                 <Button
                   variant="outline-primary"
                   size="sm"
@@ -43,7 +49,7 @@ const Appbar = () => {
                   Log In
                 </Button>{" "}
               </Nav.Link>
-              <Nav.Link href="#pricing" className={styles.navLink}>
+              <Nav.Link href="/joinAs" className={styles.navLink}>
                 <Button variant="info" size="sm" className={styles.bttn}>
                   SignUp
                 </Button>{" "}
