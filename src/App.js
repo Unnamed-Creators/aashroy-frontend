@@ -7,6 +7,8 @@ import Loader from "./components/shared/Loader/index.js";
 // import "react-toastify/dist/ReactToastify.css";
 const Home = React.lazy(() => import("./pages/Home"));
 const MainUi = React.lazy(() => import("./pages/MainUi"));
+const CrimeReporting = React.lazy(() => import("./pages/CrimeReporting"));
+const CrimeForm = React.lazy(() => import("./pages/CrimeRepoForm"));
 
 require("dotenv").config();
 
@@ -38,6 +40,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/main" component={MainUi} />
+          <Route exact path="/crimereporting" component={CrimeReporting} />
+          <Route exact path="/crimereporting/form" component={CrimeForm} />
         </Switch>
       </Router>
     </Suspense>
