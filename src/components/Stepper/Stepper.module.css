@@ -52,3 +52,20 @@
   /* .file_upload:hover::before {
     border-color: black;
   } */
+  @media only screen and (max-width:500px){
+      .main_div{
+          flex-direction: column;
+      }
+      .left{
+
+        width: 90%;
+    }
+    .buttons{
+        margin-top: 1rem;
+    }
+    .right{
+        margin-top: 1rem;
+        height: 250px;
+        width: 330px;
+    }
+  }
