@@ -19,6 +19,7 @@ import {
 } from "react-hook-form";
 import style from  "./Stepper.module.css";
 import tick from "./img/tick.svg";
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -321,6 +322,9 @@ const LinaerStepper = () => {
               style={{ width: "12%", marginTop: "3rem" }}
             />
           </Box>
+          <div className={style.buttons}>
+            <button > <Link to='/' style={{color:"#fff",textDecoration:"none"}}>Return to Home Page</Link> </button>
+            </div>
           </Box>
         </Box>
       ) : (
