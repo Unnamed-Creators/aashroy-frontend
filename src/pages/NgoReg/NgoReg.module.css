@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(242, 245, 247);
+  /*display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.TopHeading {
+  width: 50rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.TopHeading .link {
+  position: absolute;
+  float: left;
+  cursor: pointer;
+}
+.TopHeading .heading {
+  position: relative;
+  text-align: center;
+}
+.stepper {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  background-color: #c2d1d9;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #c2d1d9;
+  cursor: pointer;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.stepWrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.stepBlock {
+  text-align: center;
+}
+
+.stepBlock .circleWrapper {
+  padding: 0px 65px;
+  position: relative;
+}
+.stepLabel {
+  color: #a1aeb7;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 0.5rem;
+}
+
+.selected .stepLabel {
+  color: #8676ff;
+}
+
+.selected .circle {
+  color: #fff;
+  background-color: #8676ff;
+  border-color: #8676ff;
+}
+.stepBlock:not(:last-child) > .circleWrapper::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-color: #c2d1d9;
+  margin: auto;
+  z-index: -1;
+}
+
+.stepBlock:not(:last-child) > .circleWrapper::after {
+  height: 1px;
+}
+
+.primaryButton {
+  padding: 10px 20px;
+  background-color: green;
+  border: none;
+  margin: 10px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
