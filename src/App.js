@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
+import Bot from "./components/chatBot/index.js";
 // import "react-toastify/dist/ReactToastify.css";
 const Home = React.lazy(() => import("./pages/Home"));
 const NGO = React.lazy(() => import("./pages/NGO"));
@@ -52,6 +53,7 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Router>
+        <Bot />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/ngo" component={NGO} />
