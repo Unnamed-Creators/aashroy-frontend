@@ -30,6 +30,18 @@
     justify-content: center;
     padding-bottom: 1rem;
 }
+.buttons button{
+    padding: 0.5rem 0.8rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #383874;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
 /* .custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
   } */
