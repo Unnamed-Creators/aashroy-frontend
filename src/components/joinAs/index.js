@@ -31,7 +31,7 @@ const JoinAs = () => {
         </Link>
       </div>
       <div className={styles.link2}>
-        <Link to="/homelessList" style={{ textDecoration: "none" }}>
+        <Link to="/ngoregistration" style={{ textDecoration: "none" }}>
           <div className={styles.listH}>
             <div className={styles.image}>
               <GroupsIcon />

@@ -10,12 +10,10 @@ const NGO = React.lazy(() => import("./pages/NGO"));
 const Homeless = React.lazy(() => import("./pages/homelessList"));
 const DonationAmount = React.lazy(() => import("./pages/Donation"));
 const MainUi = React.lazy(() => import("./pages/MainUi"));
-<<<<<<< HEAD
 const RegSuccess = React.lazy(() => import("./pages/RegSuccess/RegSuccess"));
 const NgoReg = React.lazy(() => import("./pages/NgoReg"));
 const NAReportOne = React.lazy(() => import("./pages/NAReportOne"));
 const NAReportRest = React.lazy(() => import("./pages/NAReportRest"));
-=======
 const CrimeReporting = React.lazy(() => import("./pages/CrimeReporting"));
 const CrimeForm = React.lazy(() => import("./pages/CrimeRepoForm"));
 const LoginUI = React.lazy(() => import("./pages/LoginUI"));
@@ -23,7 +21,9 @@ const JoinAs = React.lazy(() => import("./pages/joinAs"));
 const SignUp = React.lazy(() => import("./pages/SignUp"));
 const User = React.lazy(() => import("./pages/userDash"));
 const Admin = React.lazy(() => import("./pages/admin"));
->>>>>>> 6d29cc714ed95e5dfc57dc95bc8aa6dc9f923719
+const LoginUser = React.lazy(() => import("./pages/loginUser"));
+const LoginNGO = React.lazy(() => import("./pages/loginNGO"));
+const LoginAdmin = React.lazy(() => import("./pages/LoginAdmin"));
 
 require("dotenv").config();
 
@@ -58,12 +58,10 @@ function App() {
           <Route exact path="/homelessList" component={Homeless} />
           <Route exact path="/totalDonation" component={DonationAmount} />
           <Route exact path="/main" component={MainUi} />
-<<<<<<< HEAD
           <Route exact path="/regsuccess" component={RegSuccess} />
           <Route exact path="/ngoregistration" component={NgoReg} />
           <Route exact path="/nareportone" component={NAReportOne} />
           <Route exact path="/nareportrest" component={NAReportRest} />
-=======
           <Route exact path="/crimereporting" component={CrimeReporting} />
           <Route exact path="/crimereporting/form" component={CrimeForm} />
           <Route exact path="/loginUI" component={LoginUI} />
@@ -71,7 +69,9 @@ function App() {
           <Route exact path="/signUp" component={SignUp} />
           <Route exact path="/user" component={User} />
           <Route exact path="/admin" component={Admin} />
->>>>>>> 6d29cc714ed95e5dfc57dc95bc8aa6dc9f923719
+          <Route exact path="/loginUser" component={LoginUser} />
+          <Route exact path="/loginNGO" component={LoginNGO} />
+          <Route exact path="/loginAdmin" component={LoginAdmin} />
         </Switch>
       </Router>
     </Suspense>

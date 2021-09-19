@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./FormDetails.module.css";
 import { Container, Row, Col, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [data, setData] = useState({
@@ -69,9 +70,11 @@ const Index = () => {
                 />
               </Form.Group>
               <div className={styles.textCenterv2}>
-                <button type="submit" className={styles.btn}>
-                  Proceed
-                </button>
+                <Link to="/nareportrest">
+                  <button type="submit" className={styles.btn}>
+                    Proceed
+                  </button>
+                </Link>
               </div>
             </Form>
           </Col>

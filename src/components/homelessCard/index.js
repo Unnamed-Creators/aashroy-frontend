@@ -14,9 +14,11 @@ const HomelessCard = () => {
         <div className={styles.details}>
           <div className={styles.preview}>Location : {location}</div>
           <div className={styles.moreDetails}>
-            <Button variant="outlined" size="small">
-              Details
-            </Button>
+            <Link to="/">
+              <Button variant="outlined" size="small">
+                Details
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
