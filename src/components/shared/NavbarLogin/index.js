@@ -25,19 +25,19 @@ const Appbar = () => {
               <Nav.Link href="/" className={styles.navLink}>
                 Home
               </Nav.Link>
-              <Nav.Link href="/loginUser" className={styles.navLink}>
-                Individual
+              <Nav.Link href="/loginUI" className={styles.navLink}>
+                User
               </Nav.Link>
               <Nav.Link href="/donation" className={styles.navLink}>
                 Donation
               </Nav.Link>
-              <Nav.Link href="/crimereporting" className={styles.navLink}>
+              <Nav.Link href="/crime" className={styles.navLink}>
                 Crime
               </Nav.Link>
-              <Nav.Link href="/loginNGO" className={styles.navLink}>
+              <Nav.Link href="/ngo" className={styles.navLink}>
                 NGO
               </Nav.Link>
-              <Nav.Link href="/loginAdmin" className={styles.navLink}>
+              <Nav.Link href="/loginUI" className={styles.navLink}>
                 Admin
               </Nav.Link>
               <Nav.Link href="/loginUI" className={styles.navLink}>

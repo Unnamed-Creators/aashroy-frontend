@@ -140,22 +140,22 @@ export default function SignUp() {
               </Grid>
               <Grid item xs={12}>
                 <PhoneNo />
-                {value == "enterOtp" && (
+                {value === "enterOtp" && (
                   <Grid item xs={12}>
                     <OtpInput />
                   </Grid>
                 )}
-                {variable == 0 && (
+                {variable === 0 && (
                   <button className={styles.getOtp} onClick={handleClick}>
                     Get OTP
                   </button>
                 )}
-                {variable == 1 && (
+                {variable === 1 && (
                   <button className={styles.getOtp} onClick={handleClick}>
                     Verify OTP
                   </button>
                 )}
-                {variable == 2 && <div>{verifyStatus}</div>}
+                {variable === 2 && <div>{verifyStatus}</div>}
               </Grid>
 
               <Grid item xs={12}>

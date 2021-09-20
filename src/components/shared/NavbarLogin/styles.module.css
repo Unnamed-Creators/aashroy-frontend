@@ -1,0 +1,27 @@
+.bttn {
+  margin-left: 1rem;
+  width: 80px !important;
+}
+.aashroy {
+  background-color: #f3ec78;
+  background: linear-gradient(90.87deg, #ff708b 16.28%, #8676ff 94.61%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.meAuto {
+  margin-left: auto;
+}
+@media only screen and (max-width: 767px) {
+  .bttn {
+    margin: 0;
+  }
+  .resize {
+    background-color: blue;
+  }
+}
+.navLink {
+  width: auto !important;
+}

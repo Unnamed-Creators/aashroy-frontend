@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
+import Bot from "./components/chatBot/index.js";
 // import "react-toastify/dist/ReactToastify.css";
 const Home = React.lazy(() => import("./pages/Home"));
 const NGO = React.lazy(() => import("./pages/NGO"));
@@ -21,6 +22,9 @@ const JoinAs = React.lazy(() => import("./pages/joinAs"));
 const SignUp = React.lazy(() => import("./pages/SignUp"));
 const User = React.lazy(() => import("./pages/userDash"));
 const Admin = React.lazy(() => import("./pages/admin"));
+const LoginUser = React.lazy(() => import("./pages/loginUser"));
+const LoginNGO = React.lazy(() => import("./pages/loginNGO"));
+const LoginAdmin = React.lazy(() => import("./pages/LoginAdmin"));
 
 require("dotenv").config();
 
@@ -49,6 +53,7 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Router>
+        <Bot />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/ngo" component={NGO} />
@@ -66,6 +71,9 @@ function App() {
           <Route exact path="/signUp" component={SignUp} />
           <Route exact path="/user" component={User} />
           <Route exact path="/admin" component={Admin} />
+          <Route exact path="/loginUser" component={LoginUser} />
+          <Route exact path="/loginNGO" component={LoginNGO} />
+          <Route exact path="/loginAdmin" component={LoginAdmin} />
         </Switch>
       </Router>
     </Suspense>

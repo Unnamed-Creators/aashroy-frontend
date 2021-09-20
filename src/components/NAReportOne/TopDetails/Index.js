@@ -1,17 +1,16 @@
-import React from 'react'
-import styles from './TopDetails.module.css'
+import React from "react";
+import styles from "./TopDetails.module.css";
 const TopDetails = () => {
-    return (
-        <>
-           <div className={styles.TopHeading}>
-        <a className={styles.link}>
-          Back
-        </a>
+  return (
+    <>
+      <div className={styles.TopHeading}>
         <h3 className={styles.heading}>File a complaint</h3>
-        <p className={styles.Subheading}>For the purpose of industry regulation, your details are required.</p>
-      </div> 
-        </>
-    )
-}
+        <p className={styles.Subheading}>
+          For the purpose of industry regulation, your details are required.
+        </p>
+      </div>
+    </>
+  );
+};
 
 export default TopDetails;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import styles from "./FifthSlide.module.css";
 
 const FifthSlide = (props) => {
@@ -152,13 +153,17 @@ const FifthSlide = (props) => {
                       >
                         Back
                       </button>
-                      <button
-                        type="submit"
-                        className={styles.btn}
-                        onClick={() => props.updateStep(props.currentStep + 1)}
-                      >
-                        Submit
-                      </button>
+                      <Link to="/ngo">
+                        <button
+                          type="submit"
+                          className={styles.btn}
+                          onClick={() =>
+                            props.updateStep(props.currentStep + 1)
+                          }
+                        >
+                          Submit
+                        </button>
+                      </Link>
                     </div>
                   </Form>
                 </Col>

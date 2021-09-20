@@ -1,14 +1,14 @@
 import React from "react";
-import LoginUI from "../../components/LoginUI";
+import SignInUser from "../../components/loginUser";
 import Appbar from "../../components/shared/Navbar";
 
-const Login = () => {
+const LoginUser = () => {
   return (
     <div>
       <Appbar />
-      <LoginUI />
+      <SignInUser />
     </div>
   );
 };
 
-export default Login;
+export default LoginUser;

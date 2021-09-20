@@ -1,12 +1,12 @@
 import React from "react";
-import LoginUI from "../../components/LoginUI";
+import SignInAdmin from "../../components/LoginAdmin";
 import Appbar from "../../components/shared/Navbar";
 
 const Login = () => {
   return (
     <div>
       <Appbar />
-      <LoginUI />
+      <SignInAdmin />
     </div>
   );
 };

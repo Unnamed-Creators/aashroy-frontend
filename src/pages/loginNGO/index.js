@@ -1,14 +1,14 @@
 import React from "react";
-import LoginUI from "../../components/LoginUI";
+import SignInNGO from "../../components/loginNGO";
 import Appbar from "../../components/shared/Navbar";
 
-const Login = () => {
+const LoginNGO = () => {
   return (
     <div>
       <Appbar />
-      <LoginUI />
+      <SignInNGO />
     </div>
   );
 };
 
-export default Login;
+export default LoginNGO;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import styles from "./ThirdSlide.module.css";
 
 const ThirdSlide = (props) => {
@@ -156,13 +157,17 @@ const ThirdSlide = (props) => {
                       >
                         Back
                       </button>
-                      <button
-                        type="submit"
-                        className={styles.btn}
-                        onClick={() => props.updateStep(props.currentStep + 1)}
-                      >
-                        Submit
-                      </button>
+                      <Link to="/">
+                        <button
+                          type="submit"
+                          className={styles.btn}
+                          onClick={() =>
+                            props.updateStep(props.currentStep + 1)
+                          }
+                        >
+                          Submit
+                        </button>
+                      </Link>
                     </div>
                   </Form>
                 </Col>
