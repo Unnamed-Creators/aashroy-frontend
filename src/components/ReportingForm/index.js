@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { reportAnoCrime } from "../../redux/action/crimeReporting";
 import {
   Typography,
   TextField,
@@ -20,7 +21,8 @@ import {
 import tick from "../Stepper/img/tick.svg";
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
-
+// import { connect } from "react-redux";
+import PropTypes from "prop-types";
 const useStyles = makeStyles((theme) => ({
   button: {
     marginRight: theme.spacing(1),
@@ -277,13 +279,14 @@ const AdressForm = () => {
         render={({ field }) => (
           <input
             type="file"
+            name="upload"
             className={style.file_upload}
             id="exampleFormControlFile1"
             style={{ display: "block", marginTop: "1rem" }}
           />
         )}
       />
-            <Controller
+      <Controller
         control={control}
         name="SusInfo"
         render={({ field }) => (
@@ -315,7 +318,7 @@ const Preview = () => {
       </Typography>
       <Paper variant="Box" style={{ marginBottom: "2rem" }}>
         <Typography variant="h6" style={{ display: "block", padding: "2rem" }}>
-        Complaint/Incident details
+          Complaint/Incident details
         </Typography>
         <Typography
           variant="h7"
@@ -327,8 +330,7 @@ const Preview = () => {
           variant="h7"
           style={{ display: "block", paddingLeft: "2rem", marginTop: "2rem" }}
         >
-          Apporximate date & time of
- incident/crime :
+          Apporximate date & time of incident/crime :
         </Typography>
         <Typography
           variant="h7"
@@ -359,7 +361,7 @@ const Preview = () => {
             paddingBottom: "2rem",
           }}
         >
-         Reason for delay in reporting :
+          Reason for delay in reporting :
         </Typography>
         <Typography
           variant="h7"
@@ -369,8 +371,7 @@ const Preview = () => {
             paddingBottom: "2rem",
           }}
         >
-        Please provide any additional
-information about the crime/incident :
+          Please provide any additional information about the crime/incident :
         </Typography>
       </Paper>
     </>
@@ -393,7 +394,7 @@ const ReportingForm = () => {
   const classes = useStyles();
   const methods = useForm({
     defaultValues: {
-        crime: "",
+      crime: "",
       Date: "",
       Reason: "",
       AdditionalInfo: "",
@@ -402,13 +403,18 @@ const ReportingForm = () => {
       SuspectName: "",
       NearbyNgo: "",
       SusInfo: "",
+      uploadFile: "",
     },
   });
+
   const [activeStep, setActiveStep] = useState(0);
   // const [skippedSteps, setSkippedSteps] = useState([]);
   const steps = getSteps();
   const handleNext = (data) => {
-    if (activeStep === steps.length - 1) console.log(data);
+    if (activeStep === steps.length - 1) {
+      console.log(data);
+      // reportAnoCrime(data);
+    }
     setActiveStep(activeStep + 1);
     // setSkippedSteps(skippedSteps.filter((skipItem) => skipItem !== activeStep));
   };
@@ -436,9 +442,13 @@ const ReportingForm = () => {
         >
           <Box style={{ marginTop: "2rem" }}>
             <Typography variant="h4" align="center">
-            Complaint Registered Successfully
+              Complaint Registered Successfully
             </Typography>
-            <Typography variant="h6" align="center" style={{color:"#828282"}}>
+            <Typography
+              variant="h6"
+              align="center"
+              style={{ color: "#828282" }}
+            >
               Thank you for your valuable information
             </Typography>
             <Box align="center">
@@ -449,7 +459,12 @@ const ReportingForm = () => {
               />
             </Box>
             <div className={style.buttons}>
-            <button > <Link to='/' style={{color:"#fff",textDecoration:"none"}}>Return to Home Page</Link> </button>
+              <button>
+                {" "}
+                <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
+                  Return to Home Page
+                </Link>{" "}
+              </button>
             </div>
           </Box>
         </Box>
@@ -517,5 +532,9 @@ const ReportingForm = () => {
     </div>
   );
 };
+// ReportingForm.propTypes = {
+//   reportAnoCrime: PropTypes.func.isRequired,
+// };
 
+// export default connect(reportAnoCrime)(ReportingForm);
 export default ReportingForm;

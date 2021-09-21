@@ -28,7 +28,7 @@ const Bot = () => {
           steps={[
             {
               id: "1",
-              message: "What is your name?",
+              message: "Hey there! What's your good name?",
               trigger: "2",
             },
             {
@@ -62,15 +62,7 @@ const Bot = () => {
             {
               id: "5",
               message: "Please sign in first to continue",
-              component: (
-                <div>
-                  {" "}
-                  <Link to="/loginUser" style={{ textDecoration: "none" }}>
-                    Sign In
-                  </Link>{" "}
-                </div>
-              ),
-              end: true,
+              trigger: "15",
             },
             {
               id: "6",
@@ -121,7 +113,6 @@ const Bot = () => {
                   </Link>{" "}
                 </div>
               ),
-              end: true,
             },
             {
               id: "13",
@@ -133,7 +124,6 @@ const Bot = () => {
                   </Link>{" "}
                 </div>
               ),
-              end: true,
             },
             {
               id: "14",
@@ -142,6 +132,17 @@ const Bot = () => {
                   {" "}
                   <Link to="/" style={{ textDecoration: "none" }}>
                     Donate
+                  </Link>{" "}
+                </div>
+              ),
+            },
+            {
+              id: "15",
+              component: (
+                <div>
+                  {" "}
+                  <Link to="/loginUser" style={{ textDecoration: "none" }}>
+                    Sign In
                   </Link>{" "}
                 </div>
               ),
