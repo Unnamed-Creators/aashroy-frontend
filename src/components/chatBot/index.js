@@ -113,7 +113,6 @@ const Bot = () => {
                   </Link>{" "}
                 </div>
               ),
-              end: true,
             },
             {
               id: "13",
@@ -125,7 +124,6 @@ const Bot = () => {
                   </Link>{" "}
                 </div>
               ),
-              end: true,
             },
             {
               id: "14",
@@ -137,7 +135,6 @@ const Bot = () => {
                   </Link>{" "}
                 </div>
               ),
-              end: true,
             },
             {
               id: "15",
