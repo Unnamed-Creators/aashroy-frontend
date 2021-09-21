@@ -1,23 +1,20 @@
 import React from "react";
-import { Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import styles from "./RegSuccess.module.css";
 import Animation from "../../components/RegSuccess/Animation/Animation";
-import Details from "../../components/RegSuccess/Details/Index"
+import Details from "../../components/RegSuccess/Details/Index";
+import Navbar from "../../components/shared/Navbar/index";
 const RegSuccess = () => {
   return (
     <>
+      <Navbar />
       <div className={styles.fullWidth}>
         <Container fluid>
           <Row className="justify-content-md-center text-center">
             <Col md={6}>
-              <Details />  
+              <Details />
               <Animation />
-              <button
-                  className={styles.btn}
-                >
-                  Return to Homepage
-                </button>
-
+              <button className={styles.btn}>Return to Homepage</button>
             </Col>
           </Row>
         </Container>

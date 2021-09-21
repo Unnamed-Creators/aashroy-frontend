@@ -110,3 +110,61 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 420px) and (min-width: 320px) {
+  .TopHeading {
+    width: 16rem;
+  }
+  .stepBlock:not(:last-child) > .circleWrapper::after {
+    display: none;
+  }
+  .stepper {
+    width: 12rem;
+  }
+  .stepBlock .circleWrapper {
+    padding: 0px 0px;
+  }
+}
+@media screen and (max-width: 575px) and (min-width: 321px) {
+  .TopHeading {
+    width: 30rem;
+  }
+  .stepBlock:not(:last-child) > .circleWrapper::after {
+    display: none;
+  }
+  .stepBlock .circleWrapper {
+    padding: 0px 0px;
+  }
+  .stepper {
+    width: 21rem;
+  }
+}
+@media screen and (max-width: 575px) and (min-width: 321px) {
+  .TopHeading {
+    width: 30rem;
+  }
+  .stepBlock:not(:last-child) > .circleWrapper::after {
+    display: none;
+  }
+  .stepBlock .circleWrapper {
+    padding: 0px 0px;
+  }
+  .stepper {
+    width: 21rem;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .TopHeading {
+    width: 30rem;
+  }
+  .stepper {
+    width: 19rem;
+  }
+  .stepBlock .circleWrapper {
+    padding: 0px 41px;
+  }
+  .stepper {
+    width: 21rem;
+  }
+}
