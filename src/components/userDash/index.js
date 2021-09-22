@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import PersonIcon from "@mui/icons-material/Person";
 import GroupsIcon from "@mui/icons-material/Groups";
-import MonetizationOnRoundedIcon from '@mui/icons-material/MonetizationOnRounded';
+import MonetizationOnRoundedIcon from "@mui/icons-material/MonetizationOnRounded";
 const UserDash = () => {
   return (
     <div>
@@ -58,7 +58,7 @@ const UserDash = () => {
             <div className={styles.wrapitUp}>
               <div className={styles.text}>Donation</div>
               <div className={styles.report}>
-                Please <span>Donate</span> the homeless
+                Please <span>Donate</span> for the homeless
               </div>
             </div>
 

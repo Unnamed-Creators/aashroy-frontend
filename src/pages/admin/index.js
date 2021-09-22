@@ -3,10 +3,13 @@ import AdminDash from "../../components/adminCrime";
 import Appbar from "../../components/shared/Navbar";
 import styles from "./styles.module.css";
 import Bot from "../../components/chatBot";
+import AppbarAuth from "../../components/shared/NavbarLogin";
+
 const HomlessList = () => {
+  const loggedin=true;
   return (
     <div>
-      <Appbar />
+     {loggedin?<AppbarAuth/>: <Appbar />}
       <h2>Crimes</h2>
       <div className={styles.wrapper}>
         <div className={styles.homeless}>

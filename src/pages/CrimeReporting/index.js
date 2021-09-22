@@ -1,11 +1,13 @@
 import React from 'react'
 import Crimec from '../../components/CrimeReporting'
 import Appbar from '../../components/shared/Navbar'
+import AppbarAuth from "../../components/shared/NavbarLogin";
 
 const CrimeReporting = () => {
+    const loggedin=true;
     return (
         <>
-        <Appbar/>
+           {loggedin?<AppbarAuth/>: <Appbar />}
            <Crimec/> 
         </>
     )
