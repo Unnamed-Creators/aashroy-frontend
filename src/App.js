@@ -26,14 +26,8 @@ const Admin = React.lazy(() => import("./pages/admin"));
 const LoginUser = React.lazy(() => import("./pages/loginUser"));
 const LoginNGO = React.lazy(() => import("./pages/loginNGO"));
 const LoginAdmin = React.lazy(() => import("./pages/LoginAdmin"));
-const DonateUI = React.lazy(() => import("./pages/DonateUI"));
-// const Details = React.lazy(() => import("./pages/Details"));
-const DonateUI_2 = React.lazy(() => import("./pages/DonateUI_2"));
-const Recipient = React.lazy(() => import("./pages/Recipient"));
-const Successful = React.lazy(() => import("./pages/Successful"));
-const DonateUI_3 = React.lazy(() => import("./pages/DonateUI_3"));
-const DonateUI_photo1 = React.lazy(() => import("./pages/DonateUI_photo1"));
-const DonateUIc_phpoto2 = React.lazy(() => import("./pages/DonateUI_photo2"));
+const GeoLocation = React.lazy(() => import("./components/geoLocation"));
+
 require("dotenv").config();
 
 export const Toastify = (type, msg) => {
@@ -94,6 +88,7 @@ function App() {
 
         
 
+          <Route exact path="/geo" component={GeoLocation} />
         </Switch>
       </Router>
     </Suspense>

@@ -21,7 +21,7 @@ import {
 import tick from "../Stepper/img/tick.svg";
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 import PropTypes from "prop-types";
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -461,7 +461,10 @@ const ReportingForm = () => {
             <div className={style.buttons}>
               <button>
                 {" "}
-                <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
+                <Link
+                  to="/user"
+                  style={{ color: "#fff", textDecoration: "none" }}
+                >
                   Return to Home Page
                 </Link>{" "}
               </button>

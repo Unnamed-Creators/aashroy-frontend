@@ -16,12 +16,11 @@ h2,
   background-clip: text;
 }
 .question {
-  font-weight: 100;
+  font-weight: 400;
   color: #8676ff;
-  margin-top: 2rem !important;
 }
 .joinUs {
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: rgb(78, 4, 4);
 }
 .listH {
@@ -30,12 +29,13 @@ h2,
   align-items: center;
   height: 80px;
   width: 320px;
-  border: 1px solid #383874;
+  border: 1.5px solid #383874;
   padding: 0.3rem;
   background-color: #f5f9ff;
   box-sizing: border-box;
   box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
   border-radius: 6px;
+  transition: 0.7s ease all;
 }
 span {
   color: blueviolet;
@@ -48,6 +48,11 @@ span {
 }
 .listH:hover .hide {
   opacity: 1;
+}
+.listH:hover {
+  transform: scale(1.1);
+  background-color: #84d6a8;
+  border: 0.2px solid rgb(0, 255, 255);
 }
 h3 {
   font-family: serif;
@@ -72,6 +77,13 @@ h3 {
   align-items: center;
   height: 20vh;
 }
+.link3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-bottom: 3rem;
+}
 .image {
   margin-right: 1.5rem;
   margin-left: 1rem;
@@ -83,8 +95,8 @@ h3 {
   color: black;
 }
 .report {
-  color: rgb(0, 255, 98);
-  font-size: 0.7rem;
+  color: rgb(8, 40, 145);
+  font-size: 0.8rem;
 }
 .wrapitUp {
   display: flex;

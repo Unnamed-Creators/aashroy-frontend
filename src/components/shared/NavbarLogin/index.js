@@ -5,6 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./styles.module.css";
+import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import styled from 'styled-components';
+import CustomizedDialogs from "../../LogInDialog";
+
 const Appbar = () => {
   return (
     <div>
@@ -46,13 +50,10 @@ const Appbar = () => {
                   size="sm"
                   className={styles.bttn}
                 >
-                  Log In
-                </Button>{" "}
-              </Nav.Link>
-              <Nav.Link href="/joinAs" className={styles.navLink}>
-                <Button variant="info" size="sm" className={styles.bttn}>
-                  SignUp
-                </Button>{" "}
+                  Log Out
+                </Button>
+                <CustomAccountIcon/>
+                {/* <CustomizedDialogs/> */}
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -63,3 +64,9 @@ const Appbar = () => {
 };
 
 export default Appbar;
+
+const CustomAccountIcon= styled(AccountCircleRoundedIcon) ` 
+margin-left: 20px;
+color: #0D6EFD;
+font-size: 2rem !important;
+`
