@@ -25,6 +25,7 @@ const Admin = React.lazy(() => import("./pages/admin"));
 const LoginUser = React.lazy(() => import("./pages/loginUser"));
 const LoginNGO = React.lazy(() => import("./pages/loginNGO"));
 const LoginAdmin = React.lazy(() => import("./pages/LoginAdmin"));
+const GeoLocation = React.lazy(() => import("./components/geoLocation"));
 
 require("dotenv").config();
 
@@ -74,6 +75,7 @@ function App() {
           <Route exact path="/loginUser" component={LoginUser} />
           <Route exact path="/loginNGO" component={LoginNGO} />
           <Route exact path="/loginAdmin" component={LoginAdmin} />
+          <Route exact path="/geo" component={GeoLocation} />
         </Switch>
       </Router>
     </Suspense>

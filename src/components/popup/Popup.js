@@ -25,7 +25,15 @@ export default () => (
             Yes
           </Link>{" "}
         </button>
-        <button>No</button>
+        <button>
+          {" "}
+          <Link
+            style={{ color: "#fff", textDecoration: "none" }}
+            to="/nareportone"
+          >
+            No
+          </Link>{" "}
+        </button>
       </div>
     </div>
   </Popup>

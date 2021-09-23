@@ -168,7 +168,7 @@ export default function SignUp() {
                 <a href="/">[T&C]</a>
               </Grid>
             </Grid>
-            <Link to="/main">
+            <Link to="/user">
               <Button
                 type="submit"
                 fullWidth
@@ -180,7 +180,7 @@ export default function SignUp() {
             </Link>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link to="/loginUI" variant="body2">
+                <Link to="/loginUser" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>

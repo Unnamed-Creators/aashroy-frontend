@@ -461,7 +461,10 @@ const ReportingForm = () => {
             <div className={style.buttons}>
               <button>
                 {" "}
-                <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
+                <Link
+                  to="/user"
+                  style={{ color: "#fff", textDecoration: "none" }}
+                >
                   Return to Home Page
                 </Link>{" "}
               </button>

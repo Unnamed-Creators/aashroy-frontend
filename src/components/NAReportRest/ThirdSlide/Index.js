@@ -157,7 +157,7 @@ const ThirdSlide = (props) => {
                       >
                         Back
                       </button>
-                      <Link to="/">
+                      <Link to="/user">
                         <button
                           type="submit"
                           className={styles.btn}
