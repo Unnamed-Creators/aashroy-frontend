@@ -44,12 +44,7 @@
       flex-direction: column;
       justify-content: center;
   }
-  .popupContent h3{
-      font-weight: 700;
-      text-align: center;
-      margin-top: 1rem;
-      color: #383874;
-  }
+
   .popup_buttons{
       margin-top: 2rem;
       display: flex;

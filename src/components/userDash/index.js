@@ -9,7 +9,6 @@ const UserDash = () => {
   return (
     <div>
       <h2 className={styles.joinUs}>Welcome Aboard!</h2>
-      <h4 className={styles.animate}>So, here we go! </h4>
       <p className={styles.question}>How would you love to help us today?</p>
       <div className={styles.link1}>
         <Link to="/main" style={{ textDecoration: "none" }}>
@@ -49,7 +48,7 @@ const UserDash = () => {
           </div>
         </Link>
       </div>
-      <div className={styles.link2}>
+      <div className={styles.link3}>
         <Link to="/totalDonation" style={{ textDecoration: "none" }}>
           <div className={styles.listH}>
             <div className={styles.image}>

@@ -116,8 +116,8 @@ export default function SignInAdmin() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/signUp" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                <Link to="/ngoregistration" variant="body2">
+                  {"Sign Up as NGO?"}
                 </Link>
               </Grid>
             </Grid>
