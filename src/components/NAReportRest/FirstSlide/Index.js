@@ -9,7 +9,6 @@ const FirstSlide = (props) => {
     stateOrUts: "",
     district: "",
     policeStation: "",
-    delayReporting: "",
     additionalInfo: "",
   });
 
@@ -27,7 +26,7 @@ const FirstSlide = (props) => {
   const formSubmit = (e) => {
     e.preventDefault();
     console.log(
-      `${data.categoryOfCrime}&${data.appDate}&${data.stateOrUts}&${data.district}&${data.policeStation}&${data.delayReporting}&${data.additionalInfo}`
+      `${data.categoryOfCrime}&${data.appDate}&${data.stateOrUts}&${data.district}&${data.policeStation}&${data.additionalInfo}`
     );
   };
 
@@ -63,9 +62,6 @@ const FirstSlide = (props) => {
                   <h3 className={styles.blueText}>
                     Complaint/Incident details
                   </h3>
-                  <h5 className={styles.notationText}>
-                    Please provide mobile number linked with the bank account
-                  </h5>
                 </div>
                 <Form.Group as={Row} className="mb-3" controlId="formDate">
                   <Form.Label column md="6">
@@ -145,27 +141,7 @@ const FirstSlide = (props) => {
                     </Form.Select>
                   </Col>
                 </Form.Group>
-                <Form.Group as={Row} className="mb-3" controlId="formPlaintext">
-                  <Form.Label column md="6">
-                    Reason for delay in reporting
-                  </Form.Label>
 
-                  <Col md="6">
-                    <Form.Select
-                      className={styles.formControl}
-                      defaultValue="Select"
-                      type="dropdown"
-                      name="delayReporting"
-                      value={data.delayReporting}
-                      onChange={InputEvent}
-                      required
-                    >
-                      <option>Select</option>
-                      <option>Meghalaya</option>
-                      <option>Assam</option>
-                    </Form.Select>
-                  </Col>
-                </Form.Group>
                 <Form.Group as={Row} className="mb-3" controlId="formPlaintext">
                   <Form.Label column md="6">
                     Please provide any additional information about the

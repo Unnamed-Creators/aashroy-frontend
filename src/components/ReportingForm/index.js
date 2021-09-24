@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { reportAnoCrime } from "../../redux/action/crimeReporting";
+import { reportAnoCrime } from "../../redux/action/crimeReporting";
 import {
   Typography,
   TextField,
@@ -390,7 +390,7 @@ function getStepContent(step) {
       return "unknown step";
   }
 }
-const ReportingForm = () => {
+const ReportingForm = (notAnoCrime) => {
   const classes = useStyles();
   const methods = useForm({
     defaultValues: {
@@ -413,7 +413,7 @@ const ReportingForm = () => {
   const handleNext = (data) => {
     if (activeStep === steps.length - 1) {
       console.log(data);
-      // reportAnoCrime(data);
+      reportAnoCrime(data);
     }
     setActiveStep(activeStep + 1);
     // setSkippedSteps(skippedSteps.filter((skipItem) => skipItem !== activeStep));
@@ -535,9 +535,9 @@ const ReportingForm = () => {
     </div>
   );
 };
-// ReportingForm.propTypes = {
-//   reportAnoCrime: PropTypes.func.isRequired,
-// };
+ReportingForm.propTypes = {
+  reportAnoCrime: PropTypes.func.isRequired,
+};
 
-// export default connect(reportAnoCrime)(ReportingForm);
-export default ReportingForm;
+export default connect(reportAnoCrime)(ReportingForm);
+// export default ReportingForm;

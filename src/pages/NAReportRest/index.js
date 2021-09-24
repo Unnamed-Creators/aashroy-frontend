@@ -19,9 +19,7 @@ const NgoReg = () => {
   return (
     <>
       <Navbar />
-      <div className="TopHeading">
-        <h3 className="heading">NGO Registration</h3>
-      </div>
+      <div className="TopHeading"></div>
       <div className="stepper">
         <StepNavigation
           labelArray={labelArray}
