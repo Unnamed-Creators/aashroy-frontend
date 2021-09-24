@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);;
+    flex-wrap: wrap;
+}
+
+.cards{
+    
+        width:60vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(3,20vh);
+        grid-gap: 40px;
+        margin: 0 auto;
+    
+}
+
+.image{
+    background-color: #A1AEB7;
+    ;
+    height: 100%;
+    flex:1;
+    position: relative;
+    
+}
+
+.image img{
+    position:absolute;
+    top:40%;
+    left:33%;
+    height:30px;
+    background-color:#A1AEB7 ;
+    
+}
+.location{
+    flex:2;
+    line-height: 0.3rem;
+    margin-left:20px;
+    background-color: white;
+}
+
+.location h4{
+    background: white;
+}
+
+.location p{
+    color: #8692A6;
+    background: white;
+
+}
+
+.donate{
+   
+    flex:1;
+    
+    margin-top: 70px;
+    
+    background-color: white;
+    margin-right: 20px;
+}
+
+.donate button{
+    background: linear-gradient(83.66deg, #052CE0 0%, #099CFF 100%);
+    padding: 0.2rem 2rem;
+    border-radius: 2px;
+    border-style: none;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .cards{
+    
+        width:60vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    
+}
+
+.donate{
+   
+    flex:1;
+    
+    /* margin-bottom: 40px; */
+    
+    background-color: white;
+    margin: 10px;
+    margin-left: 30%;
+}
+
+.location{
+    flex:2;
+    /* line-height: 0.3rem;
+    margin-left:20px; */
+    background-color: white;
+    padding-top: 30px;
+}
+  }

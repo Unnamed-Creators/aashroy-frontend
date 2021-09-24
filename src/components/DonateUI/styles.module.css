@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F2F5F7;
+    ;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.heading{
+    text-align: center;
+    margin: 5vh auto;
+    line-height: 1.6;
+}
+
+.cards{
+    width:60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3,35vh);
+    grid-gap: 30px;
+}
+
+
+.locationDelhi{
+    border: 3px black;
+    border-radius: 2px;
+    background: white;
+    
+    text-align: center;
+    line-height: 1.7rem;
+    position: relative ;
+    box-shadow:  0px 10px 30px 6px rgba(56, 56, 116, 0.15);;
+    
+}
+
+
+.locationDelhi h5{
+    background-color: white;
+    padding: 50px;
+    margin:auto;
+}
+
+/* .location-delhi:hover{
+   background-color: aquamarine;
+} */
+
+.donateButton{
+    display: block;
+    width:100%;
+    padding:15px;
+    position: absolute;
+    bottom: 0rem;
+    background:  linear-gradient(45deg, #4969FF 0%, #099CFF 100%);
+    border-style: none;
+}
+
+.locationDelhi:hover .overlay{
+    opacity: 1;
+}
+
+.locationDelhi:hover .overlay .button button{
+   width:60%;
+   padding:4px;
+   background: white;
+   position: absolute;
+   left:20%;
+   bottom:45%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background : linear-gradient(45deg, #4969FF 0%, #099CFF 100%);
+  }
+
+  .locationDelhi img{
+      height:35px;
+      margin:2.5rem;
+      margin-bottom: 0rem;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    .cards{
+    
+        /* width:60vw; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(6,10vh);
+        grid-gap: 40px; */
+        margin: 0 auto;
+    
+}
+
+  .locationDelhi{
+      line-height: 0.2rem;
+  }
+
+  .locationDelhi:hover .overlay .button button{
+    width:60%;
+    padding:10px;
+    background: white;
+    position: absolute;
+    left:20%;
+    bottom:45%;
+   
+ }
+  }

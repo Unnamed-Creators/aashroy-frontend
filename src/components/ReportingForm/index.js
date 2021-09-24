@@ -21,7 +21,7 @@ import {
 import tick from "../Stepper/img/tick.svg";
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 import PropTypes from "prop-types";
 const useStyles = makeStyles((theme) => ({
   button: {
