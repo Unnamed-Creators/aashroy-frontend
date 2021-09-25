@@ -17,9 +17,9 @@ import {
   FormProvider,
   useFormContext,
 } from "react-hook-form";
-import style from  "./Stepper.module.css";
+import style from "./Stepper.module.css";
 import tick from "./img/tick.svg";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -63,7 +63,6 @@ const upload = [
   },
 ];
 
-
 const BasicForm = () => {
   const { control } = useFormContext();
   const [currency, setCurrency] = React.useState("EUR");
@@ -72,8 +71,8 @@ const BasicForm = () => {
   };
   return (
     <>
-          <Typography variant="h5" style={{ display: "block",color:"#8676FF"}}>
-      Location Details
+      <Typography variant="h5" style={{ display: "block", color: "#8676FF" }}>
+        Location Details
       </Typography>
       <Controller
         control={control}
@@ -170,8 +169,11 @@ const AdressForm = () => {
   };
   return (
     <>
-      <Typography variant="h5" style={{ display: "block",color:"#8676FF",paddingBottom:"2rem"}}>
-      Address Proof
+      <Typography
+        variant="h5"
+        style={{ display: "block", color: "#8676FF", paddingBottom: "2rem" }}
+      >
+        Address Proof
       </Typography>
       <Controller
         control={control}
@@ -201,11 +203,11 @@ const AdressForm = () => {
         name="phoneNumber"
         render={({ field }) => (
           <input
-                    type="file"
-                    className={style.file_upload}
-                    id="exampleFormControlFile1"
-                    style={{ display:"block",marginTop:"1rem" }}
-                  />
+            type="file"
+            className={style.file_upload}
+            id="exampleFormControlFile1"
+            style={{ display: "block", marginTop: "1rem" }}
+          />
         )}
       />
     </>
@@ -215,24 +217,41 @@ const Preview = () => {
   return (
     <>
       <Typography variant="h4" style={{ display: "block" }}>
-      Final Preview
+        Final Preview
       </Typography>
-      <Typography variant="caption" style={{ display: "block", paddingBottom:"1rem"  }}>
-      Please review the information you have filled
+      <Typography
+        variant="caption"
+        style={{ display: "block", paddingBottom: "1rem" }}
+      >
+        Please review the information you have filled
       </Typography>
-      <Paper variant="Box" style={{marginBottom:"2rem"}}>
-      <Typography variant="h6" style={{ display: "block",padding: "2rem" }}>
-      Location Details
-      </Typography>
-      <Typography variant="h7" style={{ display: "block",paddingLeft: "2rem" }}>
-      Neighbourhood Name :
-      </Typography>
-      <Typography variant="h7" style={{ display: "block",paddingLeft: "2rem", marginTop:"2rem" }}>
-      Landmark :
-      </Typography>
-      <Typography variant="h7" style={{ display: "block",paddingLeft: "2rem", marginTop:"2rem", paddingBottom:"2rem" }}>
-      City/Town :
-      </Typography>
+      <Paper variant="Box" style={{ marginBottom: "2rem" }}>
+        <Typography variant="h6" style={{ display: "block", padding: "2rem" }}>
+          Location Details
+        </Typography>
+        <Typography
+          variant="h7"
+          style={{ display: "block", paddingLeft: "2rem" }}
+        >
+          Neighbourhood Name :
+        </Typography>
+        <Typography
+          variant="h7"
+          style={{ display: "block", paddingLeft: "2rem", marginTop: "2rem" }}
+        >
+          Landmark :
+        </Typography>
+        <Typography
+          variant="h7"
+          style={{
+            display: "block",
+            paddingLeft: "2rem",
+            marginTop: "2rem",
+            paddingBottom: "2rem",
+          }}
+        >
+          City/Town :
+        </Typography>
       </Paper>
     </>
   );
@@ -296,44 +315,71 @@ const LinaerStepper = () => {
   //   console.log(data);
   // };
   return (
-    <div style={{background:"#F2F5F7", padding:"0rem"}}>
-     { activeStep<=2 &&   <div className={style.text}>  <Typography variant="h4" style={{ display: "block",padding: "1rem",color:"#383874" }} align="center">
-          Data Entry
-      </Typography>
-          <Typography variant="h7" style={{ display: "block",padding: "0.5rem",color:"rgba(130 ,130 ,130 ,0.5)" }} align="center">
-          Please fill up the required information on homeless people
-      </Typography>
-      </div>}
-
+    <div style={{ background: "#F2F5F7", padding: "0rem" }}>
+      {activeStep <= 2 && (
+        <div className={style.text}>
+          {" "}
+          <Typography
+            variant="h4"
+            style={{ display: "block", padding: "1rem", color: "#383874" }}
+            align="center"
+          >
+            Data Entry
+          </Typography>
+          <Typography
+            variant="h7"
+            style={{
+              display: "block",
+              padding: "0.5rem",
+              color: "rgba(130 ,130 ,130 ,0.5)",
+            }}
+            align="center"
+          >
+            Please fill up the required information on homeless people
+          </Typography>
+        </div>
+      )}
 
       {activeStep === steps.length ? (
-        <Box style={{padding:"2rem",paddingBottom:"5rem",marginTop:"3rem"}}>
-        <Box style={{marginTop:"2rem"}}>
-          <Typography variant="h4" align="center">
-            Data Entry Completed Successfully
-          </Typography>
-          <Typography variant="h6" align="center">
-            Thank you for your valuable information
-          </Typography>
-          <Box align="center">
-            <img
-              src={tick}
-              alt=""
-              style={{ width: "12%", marginTop: "3rem" }}
-            />
-          </Box>
-          <div className={style.buttons}>
-            <button > <Link to='/' style={{color:"#fff",textDecoration:"none"}}>Return to Home Page</Link> </button>
+        <Box
+          style={{ padding: "2rem", paddingBottom: "5rem", marginTop: "3rem" }}
+        >
+          <Box style={{ marginTop: "2rem" }}>
+            <Typography variant="h4" align="center">
+              Data Entry Completed Successfully
+            </Typography>
+            <Typography variant="h6" align="center">
+              Thank you for your valuable information
+            </Typography>
+            <Box align="center">
+              <img
+                src={tick}
+                alt=""
+                style={{ width: "12%", marginTop: "3rem" }}
+              />
+            </Box>
+            <div className={style.buttons}>
+              <button>
+                {" "}
+                <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
+                  Return to Home Page
+                </Link>{" "}
+              </button>
             </div>
           </Box>
         </Box>
       ) : (
         <>
-        <Stepper alternativeLabel activeStep={activeStep} style={{background:"#F2F5F7"}}>
-        {steps.map((step, index) => {
-          const labelProps = {};
-          const stepProps = {};
-          {/* if (isStepOptional(index)) {
+          <Stepper
+            alternativeLabel
+            activeStep={activeStep}
+            style={{ background: "#F2F5F7" }}
+          >
+            {steps.map((step, index) => {
+              const labelProps = {};
+              const stepProps = {};
+              {
+                /* if (isStepOptional(index)) {
             labelProps.optional = (
               <Typography
                 variant="caption"
@@ -341,26 +387,30 @@ const LinaerStepper = () => {
                 style={{ display: "block" }}
               ></Typography>
             );
-          } */}
-          {/* if (isStepSkipped(index)) {
+          } */
+              }
+              {
+                /* if (isStepSkipped(index)) {
             stepProps.completed = false;
-          } */}
-          return (
-            <Step {...stepProps} key={index}>
-              <StepLabel {...labelProps}>{step}</StepLabel>
-            </Step>
-          );
-        })}
-      </Stepper>
+          } */
+              }
+              return (
+                <Step {...stepProps} key={index}>
+                  <StepLabel {...labelProps}>{step}</StepLabel>
+                </Step>
+              );
+            })}
+          </Stepper>
           <FormProvider {...methods}>
-            <form onSubmit={methods.handleSubmit(handleNext)} style={{background:"#F2F5F7"}}>
+            <form
+              onSubmit={methods.handleSubmit(handleNext)}
+              style={{ background: "#F2F5F7" }}
+            >
               <div className={style.main_div}>
                 <div className={style.left}>{getStepContent(activeStep)}</div>
                 {activeStep <= 1 && (
                   <div className={style.right}>
-                    {activeStep === 0 && <div className={style.map}>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15023.348600136947!2d81.23844251854402!3d19.71955623754935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2e3f49439371f7%3A0x37fe5beee14d49b9!2sNarayanpur%2C%20Chhattisgarh%20494661!5e0!3m2!1sen!2sin!4v1632325784499!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>}
+                    {activeStep === 0 && <div className={style.map}></div>}
                     {activeStep === 1 && <div className={style.image}></div>}
                   </div>
                 )}
@@ -388,7 +438,11 @@ const LinaerStepper = () => {
                   variant="contained"
                   // onClick={handleNext}
                   type="submit"
-                  style={{background:" linear-gradient(270deg, #02A4FF 0%, #7D40FF 162.75%)",color:"#fff"}}
+                  style={{
+                    background:
+                      " linear-gradient(270deg, #02A4FF 0%, #7D40FF 162.75%)",
+                    color: "#fff",
+                  }}
                 >
                   {activeStep === steps.length - 1 ? "Finish" : "Next"}
                 </Button>

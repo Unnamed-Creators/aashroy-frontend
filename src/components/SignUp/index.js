@@ -117,7 +117,7 @@ export default function SignUp() {
                 <TextField
                   required
                   fullWidth
-                  name="password"
+                  name="address"
                   placeholder="Address"
                   type="text"
                   id="address"

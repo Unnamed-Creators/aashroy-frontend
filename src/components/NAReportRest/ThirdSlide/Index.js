@@ -69,7 +69,7 @@ const ThirdSlide = (props) => {
                       <Col md="6">
                         <Form.Control
                           className={styles.formControl}
-                          type="date"
+                          type="text"
                           name="approDate"
                           value={data.approDate}
                           onChange={InputEvent}

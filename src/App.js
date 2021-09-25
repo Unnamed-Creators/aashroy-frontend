@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
 import Bot from "./components/chatBot/index.js";
+// import DonateUI_photo2 from "./pages/DonateUI_photo2";
 // import "react-toastify/dist/ReactToastify.css";
 const Home = React.lazy(() => import("./pages/Home"));
 const NGO = React.lazy(() => import("./pages/NGO"));
