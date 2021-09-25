@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
 import Bot from "./components/chatBot/index.js";
-import DonateUI_photo2 from "./pages/DonateUI_photo2";
+// import DonateUI_photo2 from "./pages/DonateUI_photo2";
 // import "react-toastify/dist/ReactToastify.css";
 const Home = React.lazy(() => import("./pages/Home"));
 const NGO = React.lazy(() => import("./pages/NGO"));
@@ -26,7 +26,6 @@ const Admin = React.lazy(() => import("./pages/admin"));
 const LoginUser = React.lazy(() => import("./pages/loginUser"));
 const LoginNGO = React.lazy(() => import("./pages/loginNGO"));
 const LoginAdmin = React.lazy(() => import("./pages/LoginAdmin"));
-const GeoLocation = React.lazy(() => import("./components/geoLocation"));
 
 require("dotenv").config();
 
@@ -76,19 +75,6 @@ function App() {
           <Route exact path="/loginUser" component={LoginUser} />
           <Route exact path="/loginNGO" component={LoginNGO} />
           <Route exact path="/loginAdmin" component={LoginAdmin} />
-
-          <Route exact path="/donateUI" component={DonateUI} />
-          {/* <Route exact path="/details" component={DonateUI} /> */}
-          <Route exact path="/donateUI_2" component={DonateUI_2} />
-          <Route exact path="/recipient" component={Recipient} />
-          <Route exact path="/success" component={Successful} />
-          <Route exact path="/donateUI_3" component={DonateUI_3} />
-          <Route exact path="/donateUI_photo1" component={DonateUI_photo1} />
-          <Route exact path="/donateUI_photo2" component={DonateUI_photo2} />
-
-        
-
-          <Route exact path="/geo" component={GeoLocation} />
         </Switch>
       </Router>
     </Suspense>

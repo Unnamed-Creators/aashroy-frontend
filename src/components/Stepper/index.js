@@ -200,7 +200,7 @@ const AdressForm = () => {
 
       <Controller
         control={control}
-        name="photoProof"
+        name="phoneNumber"
         render={({ field }) => (
           <input
             type="file"
@@ -410,9 +410,7 @@ const LinaerStepper = () => {
                 <div className={style.left}>{getStepContent(activeStep)}</div>
                 {activeStep <= 1 && (
                   <div className={style.right}>
-                    {activeStep === 0 && <div className={style.map}>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15023.348600136947!2d81.23844251854402!3d19.71955623754935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2e3f49439371f7%3A0x37fe5beee14d49b9!2sNarayanpur%2C%20Chhattisgarh%20494661!5e0!3m2!1sen!2sin!4v1632325784499!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>}
+                    {activeStep === 0 && <div className={style.map}></div>}
                     {activeStep === 1 && <div className={style.image}></div>}
                   </div>
                 )}

@@ -5,10 +5,10 @@ import Appbar from "../../components/shared/Navbar";
 import AppbarAuth from "../../components/shared/NavbarLogin";
 
 const MainUi = () => {
-  const loggedin=true;
+  const loggedin = true;
   return (
     <div>
-      {loggedin?<AppbarAuth/>: <Appbar />}
+      {loggedin ? <AppbarAuth /> : <Appbar />}
       <MainUic />
     </div>
   );

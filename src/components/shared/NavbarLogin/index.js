@@ -5,8 +5,8 @@ import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./styles.module.css";
-import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
-import styled from 'styled-components';
+import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
+import styled from "styled-components";
 import CustomizedDialogs from "../../LogInDialog";
 
 const Appbar = () => {
@@ -29,22 +29,22 @@ const Appbar = () => {
               <Nav.Link href="/" className={styles.navLink}>
                 Home
               </Nav.Link>
-              <Nav.Link href="/loginUI" className={styles.navLink}>
+              <Nav.Link href="/loginUser" className={styles.navLink}>
                 User
               </Nav.Link>
               <Nav.Link href="/donation" className={styles.navLink}>
                 Donation
               </Nav.Link>
-              <Nav.Link href="/crime" className={styles.navLink}>
+              <Nav.Link href="/crimereporting" className={styles.navLink}>
                 Crime
               </Nav.Link>
-              <Nav.Link href="/ngo" className={styles.navLink}>
+              <Nav.Link href="/loginNGO" className={styles.navLink}>
                 NGO
               </Nav.Link>
-              <Nav.Link href="/loginUI" className={styles.navLink}>
+              <Nav.Link href="/loginAdmin" className={styles.navLink}>
                 Admin
               </Nav.Link>
-              <Nav.Link href="/loginUI" className={styles.navLink}>
+              <Nav.Link href="/" className={styles.navLink}>
                 <Button
                   variant="outline-primary"
                   size="sm"
@@ -52,7 +52,7 @@ const Appbar = () => {
                 >
                   Log Out
                 </Button>
-                <CustomAccountIcon/>
+                <CustomAccountIcon />
                 {/* <CustomizedDialogs/> */}
               </Nav.Link>
             </Nav>
@@ -65,8 +65,8 @@ const Appbar = () => {
 
 export default Appbar;
 
-const CustomAccountIcon= styled(AccountCircleRoundedIcon) ` 
-margin-left: 20px;
-color: #0D6EFD;
-font-size: 2rem !important;
-`
+const CustomAccountIcon = styled(AccountCircleRoundedIcon)`
+  margin-left: 20px;
+  color: #0d6efd;
+  font-size: 2rem !important;
+`;

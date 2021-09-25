@@ -535,9 +535,9 @@ const ReportingForm = (notAnoCrime) => {
     </div>
   );
 };
-ReportingForm.propTypes = {
-  reportAnoCrime: PropTypes.func.isRequired,
-};
+// ReportingForm.propTypes = {
+//   reportAnoCrime: PropTypes.func.isRequired,
+// };
 
-export default connect(reportAnoCrime)(ReportingForm);
-// export default ReportingForm;
+// export default connect(reportAnoCrime)(ReportingForm);
+export default ReportingForm;
