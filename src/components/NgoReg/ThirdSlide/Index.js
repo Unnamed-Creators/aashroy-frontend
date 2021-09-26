@@ -144,6 +144,23 @@ const ThirdSlide = (props) => {
                     </h5>
                   </Col>
                 </Form.Group>
+                <Form.Group as={Row} className="mb-3" controlId="formPlaintext">
+                  <Form.Label column md="6">
+                    UPI ID
+                  </Form.Label>
+                  <Col md="6">
+                    <Form.Control
+                      className={styles.formControl}
+                      type="text"
+                      name="UPIid"
+                      value={data.UPIid}
+                      onChange={InputEvent}
+                    />
+                    <h5 className={styles.notationText}>
+                      Please provide your UPI Id
+                    </h5>
+                  </Col>
+                </Form.Group>
                 <div className={styles.textCenterv2}>
                   <button
                     className={styles.btn}

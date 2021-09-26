@@ -233,13 +233,13 @@ const Preview = () => {
           variant="h7"
           style={{ display: "block", paddingLeft: "2rem" }}
         >
-          Neighbourhood Name :
+          Neighbourhood Name : Kalitapara
         </Typography>
         <Typography
           variant="h7"
           style={{ display: "block", paddingLeft: "2rem", marginTop: "2rem" }}
         >
-          Landmark :
+          Landmark : Near Ganesh Mandir
         </Typography>
         <Typography
           variant="h7"
@@ -250,7 +250,7 @@ const Preview = () => {
             paddingBottom: "2rem",
           }}
         >
-          City/Town :
+          City/Town : Guwahati
         </Typography>
       </Paper>
     </>
@@ -413,8 +413,23 @@ const LinaerStepper = () => {
                 <div className={style.left}>{getStepContent(activeStep)}</div>
                 {activeStep <= 1 && (
                   <div className={style.right}>
-                    {activeStep === 0 && <div className={style.map}></div>}
-                    {activeStep === 1 && <div className={style.image}></div>}
+                    {activeStep === 0 && (
+                      <div className={style.map}>
+                        <iframe
+                          width="400"
+                          height="300"
+                          style={{
+                            border: "2px solid #162e87",
+                            borderRadius: "5px",
+                          }}
+                          loading="lazy"
+                          allowfullscreen
+                          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCLsi2FoJCh9HLJpy6KZ_bJ6AopKC6f22c
+    &q=Tokyo+Tower+Beltola+Guwahati"
+                        ></iframe>
+                      </div>
+                    )}
+                    {/* {activeStep === 1 && <div className={style.image}>Hello</div>} */}
                   </div>
                 )}
               </div>

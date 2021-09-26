@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import HomelessCard from "../../components/homelessCard";
 import Appbar from "../../components/shared/Navbar";
@@ -10,9 +10,7 @@ const HomlessList = () => {
 
   useEffect(() => {
     axios
-      .get(
-        `http://localhost:5000/homeless`
-      )
+      .get(`http://localhost:5000/homeless`)
       .then((res) => {
         setData(res.data.homeless);
       })

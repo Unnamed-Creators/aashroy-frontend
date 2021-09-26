@@ -22,6 +22,7 @@ const Bot = () => {
       <ThemeProvider theme={theme}>
         <ChatBot
           enableMobileAutoFocus={true}
+          speechSynthesis={{ enable: true, lang: "en" }}
           enableSmoothScroll={true}
           recognitionEnable={true}
           width={"300px"}
@@ -78,7 +79,7 @@ const Bot = () => {
             },
             {
               id: "8",
-              message: "Thank You for choosing to help. Click below to report.",
+              message: "Thank You for choosing to help. Click below to donate.",
               trigger: "14",
             },
             {
@@ -101,7 +102,7 @@ const Bot = () => {
             {
               id: "11",
               message:
-                "Thanks for visiting us! Our customer care executives will reach out to you soon. Have a nice day😉",
+                "Thanks for visiting us! Our customer care executives will reach out to you soon. Have a nice day!",
               end: true,
             },
             {
