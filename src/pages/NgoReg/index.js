@@ -6,6 +6,7 @@ import ThirdSlide from '../../components/NgoReg/ThirdSlide/Index';
 import FourthSlide from '../../components/NgoReg/FourthSlide/Index';
 import FifthSlide from '../../components/NgoReg/FifthSlide/Index';
 import Navbar from '../../components/shared/Navbar/index'
+
 // import styles from './NgoReg.module.css';
 import './Test.css'
 
@@ -17,6 +18,37 @@ const NgoReg = () => {
         "Document Attachment",
         "Save & Preview",
       ];
+      const [data,setData]=useState({
+        applicantOrganaization: "",
+        headOfOrganaization: "",
+        panNumber: "",
+        gender: "",
+        emailID: "",
+        phone: "",
+        Password: "",
+        fullAddress: "",
+        neighbourName: "",
+        landmark: "",
+        cityOrTown: "",
+        district: "",
+        policeStation: "",
+        state: "",
+        pin: "",
+        bankAccNumber: "",
+        accountType: "",
+        ifsc: "",
+        bankName: "",
+        bankBranch: "",
+        mobile: "",
+        emailId: "",
+        identityProof: "",
+        uploadFile: "",
+        addressProof: "",
+        addressProofUploadFile: "",
+        passport: "",
+        regOfficeAddressProof: "",
+        cancelledCheque: "",
+      });
       const [currentStep, updateCurrentStep] = useState(1);
       function updateStep(step) {
         updateCurrentStep(step);
@@ -38,19 +70,19 @@ const NgoReg = () => {
         />
       </div>
       {currentStep === 1 && (
-        <FirstSlide currentStep={currentStep} updateStep={updateStep} />
+        <FirstSlide setData={setData} data={data} currentStep={currentStep} updateStep={updateStep} />
       )}
       {currentStep === 2 && (
-        <SecondSlide currentStep={currentStep} updateStep={updateStep} />
+        <SecondSlide setData={setData} data={data}  currentStep={currentStep} updateStep={updateStep} />
       )}
       {currentStep === 3 && (
-        <ThirdSlide currentStep={currentStep} updateStep={updateStep} />
+        <ThirdSlide setData={setData} data={data}  currentStep={currentStep} updateStep={updateStep} />
       )}
       {currentStep === 4 && (
-        <FourthSlide currentStep={currentStep} updateStep={updateStep} />
+        <FourthSlide setData={setData} data={data}  currentStep={currentStep} updateStep={updateStep} />
       )}
       {currentStep === 5 && (
-        <FifthSlide currentStep={currentStep} updateStep={updateStep} />
+        <FifthSlide setData={setData} data={data}  currentStep={currentStep} updateStep={updateStep} />
       )}
             
         </>

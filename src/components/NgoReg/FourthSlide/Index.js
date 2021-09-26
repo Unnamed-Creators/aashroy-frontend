@@ -3,19 +3,10 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import styles from "./FourthSlide.module.css";
 
 const FourthSlide = (props) => {
-  const [data, setData] = useState({
-    identityProof: "",
-    uploadFile: "",
-    addressProof: "",
-    addressProofUploadFile: "",
-    passport: "",
-    regOfficeAddressProof: "",
-    cancelledCheque: "",
-  });
   const InputEvent = (event) => {
     const { name, value } = event.target;
 
-    setData((preVal) => {
+    props.setData((preVal) => {
       return {
         ...preVal,
         [name]: value,
@@ -25,10 +16,10 @@ const FourthSlide = (props) => {
   const formSubmit = (e) => {
     e.preventDefault();
     alert(
-      `${data.identityProof}&${data.uploadFile}&${data.addressProof}&${data.addressProofUploadFile}&${data.passport}&${data.regOfficeAddressProof}&${data.cancelledCheque}`
+      `${props.data.identityProof}&${props.data.uploadFile}&${props.data.addressProof}&${props.data.addressProofUploadFile}&${props.data.passport}&${props.data.regOfficeAddressProof}&${props.data.cancelledCheque}`
     );
     console.log(
-      `${data.identityProof}&${data.uploadFile}&${data.addressProof}&${data.addressProofUploadFile}&${data.passport}&${data.regOfficeAddressProof}&${data.cancelledCheque}`
+      `${props.data.identityProof}&${props.data.uploadFile}&${props.data.addressProof}&${props.data.addressProofUploadFile}&${props.data.passport}&${props.data.regOfficeAddressProof}&${props.data.cancelledCheque}`
     );
   };
   return (
@@ -47,7 +38,7 @@ const FourthSlide = (props) => {
                       className={styles.formControl}
                       defaultValue="Select"
                       name="identityProof"
-                      value={data.identityProof}
+                      value={props.data.identityProof}
                       onChange={InputEvent}
                     >
                       <option>Select</option>
@@ -64,7 +55,7 @@ const FourthSlide = (props) => {
                       className={styles.formControl}
                       type="file"
                       name="uploadFile"
-                      value={data.uploadFile}
+                      value={props.data.uploadFile}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -78,7 +69,7 @@ const FourthSlide = (props) => {
                       className={styles.formControl}
                       defaultValue="Select"
                       name="addressProof"
-                      value={data.addressProof}
+                      value={props.data.addressProof}
                       onChange={InputEvent}
                     >
                       <option>Select</option>
@@ -95,7 +86,7 @@ const FourthSlide = (props) => {
                       className={styles.formControl}
                       type="file"
                       name="addressProofUploadFile"
-                      value={data.addressProofUploadFile}
+                      value={props.data.addressProofUploadFile}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -109,7 +100,7 @@ const FourthSlide = (props) => {
                       className={styles.formControl}
                       type="file"
                       name="passport"
-                      value={data.passport}
+                      value={props.data.passport}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -123,7 +114,7 @@ const FourthSlide = (props) => {
                       className={styles.formControl}
                       type="file"
                       name="regOfficeAddressProof"
-                      value={data.regOfficeAddressProof}
+                      value={props.data.regOfficeAddressProof}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -137,7 +128,7 @@ const FourthSlide = (props) => {
                       className={styles.formControl}
                       type="file"
                       name="cancelledCheque"
-                      value={data.cancelledCheque}
+                      value={props.data.cancelledCheque}
                       onChange={InputEvent}
                     />
                   </Col>

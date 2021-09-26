@@ -2,19 +2,10 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import styles from "./ThirdSlide.module.css";
 const ThirdSlide = (props) => {
-  const [data, setData] = useState({
-    bankAccNumber: "",
-    accountType: "",
-    ifsc: "",
-    bankName: "",
-    bankBranch: "",
-    mobileNumber: "",
-    emailId: "",
-  });
   const InputEvent = (event) => {
     const { name, value } = event.target;
 
-    setData((preVal) => {
+    props.setData((preVal) => {
       return {
         ...preVal,
         [name]: value,
@@ -25,10 +16,10 @@ const ThirdSlide = (props) => {
   const formSubmit = (e) => {
     e.preventDefault();
     alert(
-      `${data.bankAccNumber}&${data.accountType}&${data.ifsc}&${data.bankName}&${data.bankBranch}&${data.mobileNumber}&${data.emailId}&$&$&$&$&`
+      `${props.data.bankAccNumber}&${props.data.accountType}&${props.data.ifsc}&${props.data.bankName}&${props.data.bankBranch}&${props.data.mobileNumber}&${props.data.emailId}&$&$&$&$&`
     );
     console.log(
-      `${data.bankAccNumber}&${data.accountType}&${data.ifsc}&${data.bankName}&${data.bankBranch}&${data.mobileNumber}&${data.emailId}&$&$&$&$&`
+      `${props.data.bankAccNumber}&${props.data.accountType}&${props.data.ifsc}&${props.data.bankName}&${props.data.bankBranch}&${props.data.mobileNumber}&${props.data.emailId}&$&$&$&$&`
     );
   };
 
@@ -48,7 +39,7 @@ const ThirdSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="bankAccNumber"
-                      value={data.bankAccNumber}
+                      value={props.data.bankAccNumber}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -62,7 +53,7 @@ const ThirdSlide = (props) => {
                       className={styles.formControl}
                       defaultValue="Select"
                       name="accountType"
-                      value={data.accountType}
+                      value={props.data.accountType}
                       onChange={InputEvent}
                     >
                       <option>Select</option>
@@ -79,7 +70,7 @@ const ThirdSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="ifsc"
-                      value={data.ifsc}
+                      value={props.data.ifsc}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -93,7 +84,7 @@ const ThirdSlide = (props) => {
                       className={styles.formControl}
                       defaultValue="Select"
                       name="bankName"
-                      value={data.bankName}
+                      value={props.data.bankName}
                       onChange={InputEvent}
                     >
                       <option>Select</option>
@@ -111,7 +102,7 @@ const ThirdSlide = (props) => {
                       defaultValue="Select"
                       type="text"
                       name="bankBranch"
-                      value={data.bankBranch}
+                      value={props.data.bankBranch}
                       onChange={InputEvent}
                     >
                       <option>Select</option>
@@ -128,7 +119,7 @@ const ThirdSlide = (props) => {
                       className={styles.formControl}
                       type="tel"
                       name="mobileNumber"
-                      value={data.mobileNumber}
+                      value={props.data.mobileNumber}
                       onChange={InputEvent}
                     />
                     <h5 className={styles.notationText}>
@@ -145,7 +136,7 @@ const ThirdSlide = (props) => {
                       className={styles.formControl}
                       type="email"
                       name="emailId"
-                      value={data.emailId}
+                      value={props.data.emailId}
                       onChange={InputEvent}
                     />
                     <h5 className={styles.notationText}>
