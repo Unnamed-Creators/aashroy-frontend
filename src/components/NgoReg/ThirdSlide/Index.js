@@ -153,7 +153,7 @@ const ThirdSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="UPIid"
-                      value={data.UPIid}
+                      value={props.data.UPIid}
                       onChange={InputEvent}
                     />
                     <h5 className={styles.notationText}>
