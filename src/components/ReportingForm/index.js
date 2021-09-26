@@ -108,7 +108,7 @@ const BasicForm = () => {
             label="Type of crime"
             value={crime}
             onChange={handleChange}
-            helperText="Please select catagory"
+            helperText="Please select Category"
             variant="filled"
             {...field}
           >
@@ -192,9 +192,9 @@ const BasicForm = () => {
         render={({ field }) => (
           <TextField
             id="ReasonDelay"
-            label="Reason for delay in reporting"
+            label="What did you see?"
             variant="standard"
-            placeholder="Enter Your reason for delay in reporting"
+            placeholder="What did you see?"
             fullWidth
             margin="normal"
             {...field}
@@ -307,16 +307,23 @@ const AdressForm = () => {
 const Preview = () => {
   return (
     <>
-      <Typography variant="h4" style={{ display: "block" }}>
+      <Typography
+        variant="h4"
+        style={{ display: "block", textAlign: "center" }}
+      >
         Final Preview
       </Typography>
       <Typography
         variant="caption"
-        style={{ display: "block", paddingBottom: "1rem" }}
+        style={{ display: "block", paddingBottom: "1rem", textAlign: "center" }}
       >
         Please review the information you have filled
       </Typography>
-      <Paper variant="Box" style={{ marginBottom: "2rem" }}>
+      <Paper
+        variant="Box"
+        className={style.outerBox}
+        style={{ marginBottom: "2rem", width: "80vw" }}
+      >
         <Typography variant="h6" style={{ display: "block", padding: "2rem" }}>
           Complaint/Incident details
         </Typography>
@@ -324,7 +331,7 @@ const Preview = () => {
           variant="h7"
           style={{ display: "block", paddingLeft: "2rem" }}
         >
-          Catagory of crime :
+          Category of crime :
         </Typography>
         <Typography
           variant="h7"
@@ -371,7 +378,7 @@ const Preview = () => {
             paddingBottom: "2rem",
           }}
         >
-          Please provide any additional information about the crime/incident :
+          Additional info about the crime/incident :
         </Typography>
       </Paper>
     </>

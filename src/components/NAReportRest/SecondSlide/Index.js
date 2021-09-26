@@ -79,8 +79,9 @@ const SecondSlide = (props) => {
                       required
                     >
                       <option>Select</option>
-                      <option>Meghalaya</option>
-                      <option>Assam</option>
+                      <option>Helping Hands</option>
+                      <option>Saarthi NGO</option>
+                      <option>Vikaas NGO</option>
                     </Form.Select>
                   </Col>
                 </Form.Group>

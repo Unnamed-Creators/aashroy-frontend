@@ -28,7 +28,7 @@ const Appbar = () => {
               <Nav.Link href="/loginUser" className={styles.navLink}>
                 Individual
               </Nav.Link>
-              <Nav.Link href="/donation" className={styles.navLink}>
+              <Nav.Link href="/donateui" className={styles.navLink}>
                 Donation
               </Nav.Link>
               <Nav.Link href="/crimereporting" className={styles.navLink}>

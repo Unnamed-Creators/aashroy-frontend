@@ -49,7 +49,7 @@ const UserDash = () => {
         </Link>
       </div>
       <div className={styles.link3}>
-        <Link to="/totalDonation" style={{ textDecoration: "none" }}>
+        <Link to="/donateui" style={{ textDecoration: "none" }}>
           <div className={styles.listH}>
             <div className={styles.image}>
               <MonetizationOnRoundedIcon />

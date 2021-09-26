@@ -131,7 +131,7 @@ const Bot = () => {
               component: (
                 <div>
                   {" "}
-                  <Link to="/" style={{ textDecoration: "none" }}>
+                  <Link to="/donateui" style={{ textDecoration: "none" }}>
                     Donate
                   </Link>{" "}
                 </div>

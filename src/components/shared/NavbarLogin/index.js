@@ -9,7 +9,7 @@ import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import styled from "styled-components";
 import CustomizedDialogs from "../../LogInDialog";
 
-const Appbar = () => {
+const AppbarAuth = () => {
   return (
     <div>
       <Navbar
@@ -32,7 +32,7 @@ const Appbar = () => {
               <Nav.Link href="/loginUser" className={styles.navLink}>
                 User
               </Nav.Link>
-              <Nav.Link href="/donation" className={styles.navLink}>
+              <Nav.Link href="/donateui" className={styles.navLink}>
                 Donation
               </Nav.Link>
               <Nav.Link href="/crimereporting" className={styles.navLink}>
@@ -63,7 +63,7 @@ const Appbar = () => {
   );
 };
 
-export default Appbar;
+export default AppbarAuth;
 
 const CustomAccountIcon = styled(AccountCircleRoundedIcon)`
   margin-left: 20px;
