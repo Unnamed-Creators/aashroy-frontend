@@ -1,25 +1,40 @@
-.cardMain {
-  height: 130px;
-  border-radius: 6px;
-  background: #ffffff;
-  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
-  border-radius: 6px;
-  display: flex;
-  /* width: 300px; */
-  padding-right: 1rem;
-}
-.details {
-  margin-left: 1rem;
-  margin-top: 1rem;
-}
-.masterCard {
-  width: 330px;
-}
-.preview {
-  font-family: serif;
-  font-weight: lighter;
-}
-.moreDetails {
+.blogCard {
   position: relative;
-  margin-top: 5px;
+  height: 250px;
+  width: 330px;
+  box-shadow: 3px 1px 13px 7px rgba(206, 198, 198, 0.479);
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.blogCard:hover {
+  transform: scale(1.02);
+}
+img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px 6px 0px 0px;
+}
+h1 {
+  font-size: responsive-font(15px);
+  margin-left: 6px;
+  color: black;
+}
+p {
+  font-size: responsive-font(12px);
+  margin-left: 6px;
+  color: gray;
+}
+.blogCardCategory {
+  position: absolute;
+  bottom: 60px;
+  right: 0px;
+  color: white;
+  width: 80.54px;
+  height: 18.18px;
+  text-align: center;
+  font-weight: 500;
+  background: #CC9900;
+  border: 2px solid white;
+  font-size: 10px;
 }
