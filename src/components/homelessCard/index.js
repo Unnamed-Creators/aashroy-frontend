@@ -1,28 +1,19 @@
 import React from "react";
-import photo from "./homeless.jpg";
-import Button from "@mui/material/Button";
-import styles from "./styles.module.css";
-import { Link } from "react-router-dom";
-const location = "Guwahati";
-const HomelessCard = () => {
+import css from "./styles.module.css";
+
+const HomelessCard = (res) => {
   return (
-    <div className={styles.masterCard}>
-      <div className={styles.cardMain}>
-        <div className={styles.photo}>
-          <img src={photo} alt="..." height="130px" />
-        </div>
-        <div className={styles.details}>
-          <div className={styles.preview}>Location : {location}</div>
-          <div className={styles.moreDetails}>
-            <Link to="/">
-              <Button variant="outlined" size="small">
-                Details
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div className={css.blogCard}>
+                    <a>
+                      <img src="https://cdn.givingcompass.org/wp-content/uploads/2018/07/13132706/Homelessness-What-To-Know-and-How-to-Help.jpg" alt="Homelessness"/>
+                      <p><strong>Address</strong>: {res.data.NeighbourhoodName},{res.data.District}</p>
+                      <p><strong>Landmark</strong>: {res.data.Landmark}</p>
+                    
+                      <div className={css.blogCardCategory}>
+                      {res.data.CityTown}
+                      </div>
+                    </a>
+                </div>
   );
 };
 

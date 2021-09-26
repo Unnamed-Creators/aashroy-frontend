@@ -11,9 +11,12 @@ h2 {
   margin: 2rem 0 2rem 0;
 }
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   width: 80%;
+   margin:0px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
 }
 @media only screen and (max-width: 1030px) {
   .homeless {
