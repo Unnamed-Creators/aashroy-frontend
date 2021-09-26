@@ -53,8 +53,10 @@ const FirstSlide = (props) => {
                       required
                     >
                       <option>Select</option>
-                      <option>Dishum Dishum</option>
-                      <option>Dhichiyaaao</option>
+                      <option>Violence</option>
+                      <option>Sexual Abuse</option>
+                      <option>Racism</option>
+                      <option>Others</option>
                     </Form.Select>
                   </Col>
                 </Form.Group>
@@ -96,6 +98,9 @@ const FirstSlide = (props) => {
                       <option>Select</option>
                       <option>Meghalaya</option>
                       <option>Assam</option>
+                      <option>Bihar</option>
+                      <option>West Bengal</option>
+                      <option>Uttar Pradesh</option>
                     </Form.Select>
                   </Col>
                 </Form.Group>
@@ -115,8 +120,15 @@ const FirstSlide = (props) => {
                       required
                     >
                       <option>Select</option>
-                      <option>Meghalaya</option>
-                      <option>Assam</option>
+                      <option>Dhemaji</option>
+                      <option>Lakhimpur</option>
+                      <option>Mongoldoi</option>
+                      <option>Barpeta</option>
+                      <option>Kamrup(M)</option>
+                      <option>Jorhat</option>
+                      <option>Dibrugarh</option>
+                      <option>Dhubri</option>
+                      <option>Nagaon</option>
                     </Form.Select>
                   </Col>
                 </Form.Group>
@@ -136,8 +148,10 @@ const FirstSlide = (props) => {
                       required
                     >
                       <option>Select</option>
-                      <option>Meghalaya</option>
-                      <option>Assam</option>
+                      <option>Kadambar P.O</option>
+                      <option>Borpothar P.O</option>
+                      <option>Gogamukh P.O</option>
+                      <option>Simen Sapori P.O</option>
                     </Form.Select>
                   </Col>
                 </Form.Group>
