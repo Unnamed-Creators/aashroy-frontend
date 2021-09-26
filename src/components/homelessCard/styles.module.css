@@ -9,18 +9,14 @@
 .blogCard:hover {
   transform: scale(1.02);
 }
-img {
+.blogCard img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 6px 6px 0px 0px;
 }
-h1 {
-  font-size: responsive-font(15px);
-  margin-left: 6px;
-  color: black;
-}
-p {
+
+.blogCard p {
   font-size: responsive-font(12px);
   margin-left: 6px;
   color: gray;
@@ -34,7 +30,7 @@ p {
   height: 18.18px;
   text-align: center;
   font-weight: 500;
-  background: #CC9900;
+  background: #cc9900;
   border: 2px solid white;
   font-size: 10px;
 }
