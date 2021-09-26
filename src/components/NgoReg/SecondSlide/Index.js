@@ -3,20 +3,10 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import styles from "./SecondSlide.module.css";
 
 const SecondSlide = (props) => {
-  const [data, setData] = useState({
-    fullAddress: "",
-    neighbourName: "",
-    landmark: "",
-    cityOrTown: "",
-    district: "",
-    policeStation: "",
-    state: "",
-    pin: "",
-  });
   const InputEvent = (event) => {
     const { name, value } = event.target;
 
-    setData((preVal) => {
+    props.setData((preVal) => {
       return {
         ...preVal,
         [name]: value,
@@ -27,10 +17,10 @@ const SecondSlide = (props) => {
   const formSubmit = (e) => {
     e.preventDefault();
     alert(
-      `${data.fullAddress}&${data.neighbourName}&${data.landmark}&${data.cityOrTown}&${data.district}&${data.policeStation}&${data.state}&${data.pin}`
+      `${props.data.fullAddress}&${props.data.neighbourName}&${props.data.landmark}&${props.data.cityOrTown}&${props.data.district}&${props.data.policeStation}&${props.data.state}&${props.data.pin}`
     );
     console.log(
-      `${data.fullAddress}&${data.neighbourName}&${data.landmark}&${data.cityOrTown}&${data.district}&${data.policeStation}&${data.state}&${data.pin}`
+      `${props.data.fullAddress}&${props.data.neighbourName}&${props.data.landmark}&${props.data.cityOrTown}&${props.data.district}&${props.data.policeStation}&${props.data.state}&${props.data.pin}`
     );
   };
 
@@ -54,7 +44,7 @@ const SecondSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="fullAddress"
-                      value={data.fullAddress}
+                      value={props.data.fullAddress}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -68,7 +58,7 @@ const SecondSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="neighbourName"
-                      value={data.neighbourName}
+                      value={props.data.neighbourName}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -82,7 +72,7 @@ const SecondSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="landmark"
-                      value={data.landmark}
+                      value={props.data.landmark}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -96,7 +86,7 @@ const SecondSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="cityOrTown"
-                      value={data.cityOrTown}
+                      value={props.data.cityOrTown}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -110,7 +100,7 @@ const SecondSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="district"
-                      value={data.district}
+                      value={props.data.district}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -124,7 +114,7 @@ const SecondSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="policeStation"
-                      value={data.policeStation}
+                      value={props.data.policeStation}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -138,7 +128,7 @@ const SecondSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="state"
-                      value={data.state}
+                      value={props.data.state}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -152,7 +142,7 @@ const SecondSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="pin"
-                      value={data.pin}
+                      value={props.data.pin}
                       onChange={InputEvent}
                     />
                   </Col>

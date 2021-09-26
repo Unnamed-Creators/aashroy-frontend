@@ -3,20 +3,10 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import styles from "./FirstSlide.module.css";
 
 const FirstSlide = (props) => {
-  const [data, setData] = useState({
-    applicantOrganaization: "",
-    headOfOrganaization: "",
-    panNumber: "",
-    gender: "",
-    emailID: "",
-    phone: "",
-    Password: "",
-  });
-
   const InputEvent = (event) => {
     const { name, value } = event.target;
 
-    setData((preVal) => {
+    props.setData((preVal) => {
       return {
         ...preVal,
         [name]: value,
@@ -27,14 +17,13 @@ const FirstSlide = (props) => {
   const formSubmit = (e) => {
     e.preventDefault();
     alert(
-      `${data.applicantOrganaization}&${data.headOfOrganaization}&${data.panNumber}&${data.gender}&${data.emailID}&${data.phone}&${data.Password}`
+      `${props.data.applicantOrganaization}&${props.data.headOfOrganaization}&${props.data.panNumber}&${props.data.gender}&${props.data.emailID}&${props.data.phone}&${props.data.Password}`
     );
     e.preventDefault();
     console.log(
-      `${data.applicantOrganaization}&${data.headOfOrganaization}&${data.panNumber}&${data.gender}&${data.emailID}&${data.phone}&${data.Password}`
+      `${props.data.applicantOrganaization}&${props.data.headOfOrganaization}&${props.data.panNumber}&${props.data.gender}&${props.data.emailID}&${props.data.phone}&${props.data.Password}`
     );
   };
-
   return (
     <>
       <div className={styles.fullWidth}>
@@ -51,7 +40,7 @@ const FirstSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="applicantOrganaization"
-                      value={data.applicantOrganaization}
+                      value={props.data.applicantOrganaization}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -65,7 +54,7 @@ const FirstSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="headOfOrganaization"
-                      value={data.headOfOrganaization}
+                      value={props.data.headOfOrganaization}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -79,7 +68,7 @@ const FirstSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="panNumber"
-                      value={data.panNumber}
+                      value={props.data.panNumber}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -93,7 +82,7 @@ const FirstSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="gender"
-                      value={data.gender}
+                      value={props.data.gender}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -107,7 +96,7 @@ const FirstSlide = (props) => {
                       className={styles.formControl}
                       type="email"
                       name="emailID"
-                      value={data.emailID}
+                      value={props.data.emailID}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -121,7 +110,7 @@ const FirstSlide = (props) => {
                       className={styles.formControl}
                       type="text"
                       name="phone"
-                      value={data.phone}
+                      value={props.data.phone}
                       onChange={InputEvent}
                     />
                   </Col>
@@ -135,7 +124,7 @@ const FirstSlide = (props) => {
                       className={styles.formControl}
                       type="password"
                       name="Password"
-                      value={data.Password}
+                      value={props.data.Password}
                       onChange={InputEvent}
                     />
                   </Col>
