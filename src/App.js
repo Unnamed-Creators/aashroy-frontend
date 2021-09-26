@@ -33,6 +33,7 @@ const PhotoRecepient = React.lazy(() => import("./pages/PhotoRecepient"));
 const Submitted = React.lazy(() => import("./pages/Submitted"));
 const ChooseReci = React.lazy(() => import("./pages/ChooseReci"));
 const DonateMain = React.lazy(() => import("./pages/donateMainPage"));
+const Success = React.lazy(() => import("./components/successPage"));
 
 require("dotenv").config();
 
@@ -89,6 +90,7 @@ function App() {
           <Route exact path="/submitted" component={Submitted} />
           <Route exact path="/chooseRecipient" component={ChooseReci} />
           <Route exact path="/donateui" component={DonateMain} />
+          <Route exact path="/success" component={Success} />
         </Switch>
       </Router>
     </Suspense>

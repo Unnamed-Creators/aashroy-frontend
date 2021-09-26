@@ -10,7 +10,7 @@ const FirstSlide = (props) => {
     gender: "",
     emailID: "",
     phone: "",
-    website: "",
+    Password: "",
   });
 
   const InputEvent = (event) => {
@@ -27,11 +27,11 @@ const FirstSlide = (props) => {
   const formSubmit = (e) => {
     e.preventDefault();
     alert(
-      `${data.applicantOrganaization}&${data.headOfOrganaization}&${data.panNumber}&${data.gender}&${data.emailID}&${data.phone}&${data.website}`
+      `${data.applicantOrganaization}&${data.headOfOrganaization}&${data.panNumber}&${data.gender}&${data.emailID}&${data.phone}&${data.Password}`
     );
     e.preventDefault();
     console.log(
-      `${data.applicantOrganaization}&${data.headOfOrganaization}&${data.panNumber}&${data.gender}&${data.emailID}&${data.phone}&${data.website}`
+      `${data.applicantOrganaization}&${data.headOfOrganaization}&${data.panNumber}&${data.gender}&${data.emailID}&${data.phone}&${data.Password}`
     );
   };
 
@@ -128,14 +128,14 @@ const FirstSlide = (props) => {
                 </Form.Group>
                 <Form.Group as={Row} className="mb-3" controlId="formPlaintext">
                   <Form.Label column md="6">
-                    Website
+                    Password
                   </Form.Label>
                   <Col md="6">
                     <Form.Control
                       className={styles.formControl}
-                      type="text"
-                      name="website"
-                      value={data.website}
+                      type="password"
+                      name="Password"
+                      value={data.Password}
                       onChange={InputEvent}
                     />
                   </Col>

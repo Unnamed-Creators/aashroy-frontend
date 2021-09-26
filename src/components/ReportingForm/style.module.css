@@ -1,51 +1,53 @@
 .MuiFilledInput-input {
-    padding: 9px 64px 3px;
+  padding: 9px 64px 3px;
 }
-.main_div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.main_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.left{
-
-    padding: 0.5rem;
+.left {
+  padding: 0.5rem;
 }
-.right{
-    height: 280px;
-    width: 350px;
+.right {
+  height: 280px;
+  width: 350px;
 }
-.right .map{
-    height: 100%;
-    width: 100%;
-    background-color: red;
+.right .map {
+  height: 100%;
+  width: 100%;
+  background-color: red;
 }
-.right .image{
-    height: 100%;
-    width: 100%;
-    background-color: blue;
+.right .image {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
 }
-.buttons{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
-    margin-top: 2rem;
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
 }
-.buttons button{
-    padding: 0.5rem 0.8rem;
-    border: none;
-    outline: none;
-    color: #fff;
-    background-color: #383874;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: 300;
-    cursor: pointer;
+.buttons button {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #383874;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+button:hover {
+  color: black;
 }
 /* .custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
   } */
-  /* .file_upload::before {
+/* .file_upload::before {
     content: '';
     display: inline-block;
     background: linear-gradient(top, #f9f9f9, #e3e3e3);
@@ -61,6 +63,6 @@
     font-size: 10pt;
     color: black;
   } */
-  /* .file_upload:hover::before {
+/* .file_upload:hover::before {
     border-color: black;
   } */
