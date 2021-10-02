@@ -360,16 +360,7 @@ const Preview = () => {
         >
           Dist/PO :
         </Typography>
-        <Typography
-          variant="h7"
-          style={{
-            display: "block",
-            paddingLeft: "2rem",
-            paddingBottom: "2rem",
-          }}
-        >
-          Reason for delay in reporting :
-        </Typography>
+
         <Typography
           variant="h7"
           style={{

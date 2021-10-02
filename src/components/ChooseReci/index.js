@@ -36,7 +36,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
   margin-top: 3rem;
   color: #383874;

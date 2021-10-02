@@ -148,10 +148,11 @@ const FirstSlide = (props) => {
                       required
                     >
                       <option>Select</option>
-                      <option>Kadambar P.O</option>
-                      <option>Borpothar P.O</option>
-                      <option>Gogamukh P.O</option>
-                      <option>Simen Sapori P.O</option>
+                      <option>Kadambar</option>
+                      <option>Dhemaji</option>
+                      <option>Borpothar</option>
+                      <option>Gogamukh</option>
+                      <option>Simen Sapori</option>
                     </Form.Select>
                   </Col>
                 </Form.Group>

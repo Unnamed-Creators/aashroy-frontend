@@ -8,7 +8,7 @@ const Card = (props) => {
       <Image src={props.img} />
       <Details>
         <Text>
-          <h3>{props.name}</h3>
+          <p>{props.name}</p>
           <p>{props.location}</p>
         </Text>
         <Button>
@@ -48,6 +48,7 @@ const Details = styled.div`
 `;
 const Text = styled.div`
   display: flex;
+  font-size: 1.3rem;
   flex-direction: column;
   justify-content: center;
   p {
@@ -58,7 +59,7 @@ const Button = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   button {
     background: linear-gradient(83.66deg, #052ce0 0%, #099cff 100%);
     border-radius: 5px;
@@ -68,7 +69,8 @@ const Button = styled.div`
     padding: 4px 25px;
   }
   @media (max-width: 400px) {
-    padding: 3px 17px;
-    font-size: 0.8rem;
+    padding: 3px 0;
+    padding-left: 1rem;
+    font-size: 0.5rem;
   }
 `;

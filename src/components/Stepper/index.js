@@ -233,13 +233,13 @@ const Preview = () => {
           variant="h7"
           style={{ display: "block", paddingLeft: "2rem" }}
         >
-          Neighbourhood Name : Kalitapara
+          Neighbourhood Name : Na Ali
         </Typography>
         <Typography
           variant="h7"
           style={{ display: "block", paddingLeft: "2rem", marginTop: "2rem" }}
         >
-          Landmark : Near Ganesh Mandir
+          Landmark : Near Big Bazar
         </Typography>
         <Typography
           variant="h7"
@@ -250,7 +250,7 @@ const Preview = () => {
             paddingBottom: "2rem",
           }}
         >
-          City/Town : Guwahati
+          City/Town : Jorhat
         </Typography>
       </Paper>
     </>

@@ -6,21 +6,13 @@ import Bot from "../../components/chatBot";
 import AppbarAuth from "../../components/shared/NavbarLogin";
 
 const HomlessList = () => {
-  const loggedin=true;
+  const loggedin = true;
   return (
     <div>
-     {loggedin?<AppbarAuth/>: <Appbar />}
+      {loggedin ? <AppbarAuth /> : <Appbar />}
       <h2>Crimes</h2>
       <div className={styles.wrapper}>
         <div className={styles.homeless}>
-          <div className={styles.hCard}>
-            <AdminDash />
-          </div>
-
-          <div className={styles.hCard}>
-            <AdminDash />
-          </div>
-
           <div className={styles.hCard}>
             <AdminDash />
           </div>

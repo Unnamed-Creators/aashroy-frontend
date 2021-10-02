@@ -32,7 +32,7 @@ const DonatePath2 = React.lazy(() => import("./pages/DonateUiPath2"));
 const PhotoRecepient = React.lazy(() => import("./pages/PhotoRecepient"));
 const Submitted = React.lazy(() => import("./pages/Submitted"));
 const ChooseReci = React.lazy(() => import("./pages/ChooseReci"));
-const DonateMain = React.lazy(() => import("./pages/homelessList"));
+const DonateMain = React.lazy(() => import("./pages/donateMainPage"));
 const Success = React.lazy(() => import("./components/successPage"));
 
 require("dotenv").config();

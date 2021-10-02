@@ -5,12 +5,12 @@ import styles from "./ThirdSlide.module.css";
 
 const ThirdSlide = (props) => {
   const [data, setData] = useState({
-    categoryOfCrime: "",
-    approDate: "",
-    stateOrUts: "",
-    district: "",
-    policeStation: "",
-    additionalInfo: "",
+    categoryOfCrime: "Violence",
+    approDate: "25/06/21",
+    stateOrUts: "Assam",
+    district: "Dhemaji",
+    policeStation: "Dhemaji",
+    additionalInfo: "Beaten with sticks for begging",
   });
 
   const InputEvent = (event) => {
