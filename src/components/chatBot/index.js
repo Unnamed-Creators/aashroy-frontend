@@ -22,7 +22,7 @@ const Bot = () => {
       <ThemeProvider theme={theme}>
         <ChatBot
           enableMobileAutoFocus={true}
-          speechSynthesis={{ enable: true, lang: "en" }}
+          // speechSynthesis={{ enable: true, lang: "en" }}
           enableSmoothScroll={true}
           recognitionEnable={true}
           width={"300px"}
