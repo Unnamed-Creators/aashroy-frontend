@@ -1,22 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from "./FifthSlide.module.css";
-
+import axios from "../../../helper/axiosinstance";
 const FifthSlide = (props) => {
-  const [data, setData] = useState({
-    applicantOrg: "",
-    headOfOrg: "",
-    panOfApplicantOrg: "",
-    gender: "",
-    emailId: "",
-    phoneNo: "",
-  });
-
   const InputEvent = (event) => {
     const { name, value } = event.target;
-
-    setData((preVal) => {
+    props.setData((preVal) => {
       return {
         ...preVal,
         [name]: value,
@@ -26,12 +16,20 @@ const FifthSlide = (props) => {
   const formSubmit = (e) => {
     e.preventDefault();
     alert(
-      `$${data.applicantOrg}&${data.headOfOrg}&${data.panOfApplicantOrg}&${data.gender}&${data.emailId}&${data.phoneNo}`
+      `$${props.data.applicantOrg}&${props.data.headOfOrg}&${props.data.panOfApplicantOrg}&${props.data.gender}&${props.data.emailId}&${props.data.phoneNo}`
     );
     console.log(
-      `$${data.applicantOrg}&${data.headOfOrg}&${data.panOfApplicantOrg}&${data.gender}&${data.emailId}&${data.phoneNo}`
+      `$${props.data.applicantOrg}&${props.data.headOfOrg}&${props.data.panOfApplicantOrg}&${props.data.gender}&${props.data.emailId}&${props.data.phoneNo}`
     );
   };
+  async function postHandler() {
+    try {
+      const res = await axios.post("/ngo/register", JSON.stringify(props.data));
+    } catch {
+      console.log("lalalalalalalala");
+    }
+  }
+
   return (
     <>
       <div className={styles.fullWidth}>
@@ -54,7 +52,7 @@ const FifthSlide = (props) => {
                           className={styles.formControl}
                           type="text"
                           name="applicantOrg"
-                          value={data.applicantOrg}
+                          value={props.data.applicantOrg}
                           onChange={InputEvent}
                         />
                       </Col>
@@ -72,7 +70,7 @@ const FifthSlide = (props) => {
                           className={styles.formControl}
                           type="text"
                           name="headOfOrg"
-                          value={data.headOfOrg}
+                          value={props.data.headOfOrg}
                           onChange={InputEvent}
                         />
                       </Col>
@@ -90,7 +88,7 @@ const FifthSlide = (props) => {
                           className={styles.formControl}
                           type="text"
                           name="panOfApplicantOrg"
-                          value={data.panOfApplicantOrg}
+                          value={props.data.panOfApplicantOrg}
                           onChange={InputEvent}
                         />
                       </Col>
@@ -108,7 +106,7 @@ const FifthSlide = (props) => {
                           className={styles.formControl}
                           type="text"
                           name="gender"
-                          value={data.gender}
+                          value={props.data.gender}
                           onChange={InputEvent}
                         />
                       </Col>
@@ -126,7 +124,7 @@ const FifthSlide = (props) => {
                           className={styles.formControl}
                           type="email"
                           name="emailId"
-                          value={data.emailId}
+                          value={props.data.emailId}
                           onChange={InputEvent}
                         />
                       </Col>
@@ -140,7 +138,7 @@ const FifthSlide = (props) => {
                           className={styles.formControl}
                           type="text"
                           name="phoneNo"
-                          value={data.phoneNo}
+                          value={props.data.phoneNo}
                           onChange={InputEvent}
                         />
                       </Col>
@@ -157,9 +155,7 @@ const FifthSlide = (props) => {
                         <button
                           type="submit"
                           className={styles.btn}
-                          onClick={() =>
-                            props.updateStep(props.currentStep + 1)
-                          }
+                          onClick={() => postHandler()}
                         >
                           Submit
                         </button>
