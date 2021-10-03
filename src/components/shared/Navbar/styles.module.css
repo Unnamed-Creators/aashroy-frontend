@@ -14,7 +14,7 @@
 .meAuto {
   margin-left: auto;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 804px) {
   .bttn {
     margin: 0;
   }
