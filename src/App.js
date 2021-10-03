@@ -26,7 +26,7 @@ const Admin = React.lazy(() => import("./pages/admin"));
 const LoginUser = React.lazy(() => import("./pages/loginUser"));
 const LoginNGO = React.lazy(() => import("./pages/loginNGO"));
 const LoginAdmin = React.lazy(() => import("./pages/LoginAdmin"));
-const GeoLocation = React.lazy(() => import("./components/geoLocation"));
+// const GeoLocation = React.lazy(() => import("./components/geoLocation"));
 const DonatePath1 = React.lazy(() => import("./pages/DonateUiPath1"));
 const DonatePath2 = React.lazy(() => import("./pages/DonateUiPath2"));
 const PhotoRecepient = React.lazy(() => import("./pages/PhotoRecepient"));
@@ -83,7 +83,7 @@ function App() {
           <Route exact path="/loginUser" component={LoginUser} />
           <Route exact path="/loginNGO" component={LoginNGO} />
           <Route exact path="/loginAdmin" component={LoginAdmin} />
-          <Route exact path="/geo" component={GeoLocation} />
+//           <Route exact path="/geo" component={GeoLocation} />
           <Route exact path="/donatePath1" component={DonatePath1} />
           <Route exact path="/donatePath2" component={DonatePath2} />
           <Route exact path="/photowithrecepient" component={PhotoRecepient} />
