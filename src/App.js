@@ -83,7 +83,7 @@ function App() {
           <Route exact path="/loginUser" component={LoginUser} />
           <Route exact path="/loginNGO" component={LoginNGO} />
           <Route exact path="/loginAdmin" component={LoginAdmin} />
-//           <Route exact path="/geo" component={GeoLocation} />
+{/* //           <Route exact path="/geo" component={GeoLocation} /> */}
           <Route exact path="/donatePath1" component={DonatePath1} />
           <Route exact path="/donatePath2" component={DonatePath2} />
           <Route exact path="/photowithrecepient" component={PhotoRecepient} />
